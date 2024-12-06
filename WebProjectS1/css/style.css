@@ -3,25 +3,27 @@
     --bg-clr: #f0f0f0;
     --bg-text-clr: #fbe7ac;
 }
+
 /* reset css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .menu {
     height: 60px;
-    position: fixed; /* Permet de fixer le menu en haut de la page */
-    top: 0; /* Positionne le menu en haut de la page */
-    left: 0; /* Positionne le menu à gauche de la page */
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
-    /* ajout d'un padding: 0px 10px 0px 10px (haut, droit,bas, gauche) */
     padding: 0px 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: rgba(24, 26, 24, 0.4); /* 20% opaque */
+    background-color: rgba(24, 26, 24, 0.4);
     color: var(--bg-text-clr);
+    z-index: 3;
 }
 
 .menu ul{
@@ -31,7 +33,7 @@
 }
 
 .menu ul li a{
-    text-decoration: none; /* Supprime le soulignement des liens */
+    text-decoration: none;
     font-weight: bold;
     padding:20px;
     color: var(--bg-text-clr);
@@ -73,14 +75,71 @@ section:nth-child(odd){
     color: var(--bg-clr);
 }
 
-/* hero */
+/* Hero */
 #hero {
     background-image: url(https://w.wallhaven.cc/full/g8/wallhaven-g8lw9l.jpg);
     background-size: cover;
     background-position: center;
+    height: 100vh; /* Hauteur de la section égale à la fenêtre */
+    position: relative; /* Nécessaire pour positionner correctement le ::before */
 }
 
-/* degradée de couleur */
-section:nth-child(2) {
-    background-color: red;
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Le dégradé commence en haut de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le dégradé couvre la moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
 }
+
+/* Deuxième section */
+section:nth-child(2) {
+    background-image: url(https://cdn.futura-sciences.com/sources/images/Rub-al-Khali-Desert-Dune.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Nécessaire pour positionner le ::before */
+    height: 100vh; /* Hauteur de la section égale à la fenêtre */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+section:nth-child(2) img {
+    max-width: 45%;
+    height: 400px;
+    display: flex;
+}
+
+section:nth-child(2) p {
+    max-width: 50%;
+    text-align: right;
+    color: #1a1a1a;
+
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18)
+}
+
+section:nth-child(2) img p{
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18)
+}
+
+/* Application du dégradé seulement sur une partie de la section */
+section:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0; /* Le dégradé commence en haut de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le dégradé couvre la moitié de la section */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
