@@ -82,6 +82,7 @@ section:nth-child(odd){
     background-position: center;
     height: 100vh; /* Hauteur de la section égale à la fenêtre */
     position: relative; /* Nécessaire pour positionner correctement le ::before */
+    z-index: 0;
 }
 
 #hero::before {
