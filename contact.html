@@ -20,17 +20,26 @@
     
     <body>
         
-        <form>
-            <h2>Qu'avez vous pensé de notre site web ?</h2> <br>
-            <label>Votre nom :</label><br>
-            <input type="text" placeholder="Gaston" id="FormNom"><br>
-            <label>Votre prénom :</label><br>
-            <input type="text" placeholder="Berger" id="FormPrenom"><br>
-            <label> Your email</label><br>
-            <input type="email" placeholder="gaston.berger@yahoo.com" id="FormMail"> <br>
-            <button>Send it !</button>
+		<form class="formulaire">
 
-        </form>
+			
+            <h2> Donnez votre Avis !</h2>
+
+            <input type="text" name="" id="inputtext" placeholder="Prenom" required> <br>
+
+            <input type="text" name="" id="inputtext" placeholder="Nom" required> <br>
+
+            <input type="text" name="" id="inputtext" placeholder="adresse.email@yahoo.com" required> <br>
+
+            <input type="text" id="inputtext" name="note" pattern="^[1-9]$|^10$" placeholder="Entrez une note de 1 à 10" required>
+
+            <textarea name="" rows="2" cols="50" id="commentaires">Donnez votre avis sur ce magnifique site !</textarea>
+
+
+            <input type="submit" id="envoi"> <br>  
+
+
+    </form>
 
     </body>
 
