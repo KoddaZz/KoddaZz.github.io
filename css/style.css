@@ -123,11 +123,7 @@ section:nth-child(2) pre {
     color: #1a1a1a;
     font-size: large;
     background-color: rgba(255, 255, 255, 0.5);
-    padding-right: 1000px;
-
-    /*backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(255, 255, 255, 0.18)*/
+    padding-right: 100px;
 }
 
 section:nth-child(2) img p{
@@ -136,14 +132,14 @@ section:nth-child(2) img p{
     border: 2px solid rgba(255, 255, 255, 0.18)
 }
 
-/* Application du dégradé seulement sur une partie de la section */
+/* Gradient 1ere moitié de la 2nde section */
 section:nth-child(2)::before {
     content: '';
     position: absolute;
-    top: 0; /* Le dégradé commence en haut de la section */
+    top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* Le dégradé couvre la moitié de la section */
+    height: 50%; /* gradient commence à partir de la moitié */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
