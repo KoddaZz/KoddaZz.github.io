@@ -106,7 +106,8 @@ section:nth-child(2) {
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 section:nth-child(2) img {
@@ -129,6 +130,10 @@ section:nth-child(2) p {
     border-radius: 5%;
     padding: 10px;
     z-index: 2;
+}
+
+section:nth-child(2) a {
+    text-align: center;
 }
 
 section:nth-child(2) img p{
