@@ -123,9 +123,11 @@ section:nth-child(2) p {
     text-align: center;
     color: #1a1a1a;
     font-size: large;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 5%;
+    padding: 10px;
     z-index: 2;
 }
 
