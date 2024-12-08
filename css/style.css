@@ -88,10 +88,10 @@ section:nth-child(odd){
 #hero::before {
     content: '';
     position: absolute;
-    top: 50%; /* Le dégradé commence en haut de la section */
+    top: 50%; /* commence moitié de la section */
     left: 0;
     right: 0;
-    height: 50%; /* Le dégradé couvre la moitié de la section */
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
@@ -101,8 +101,8 @@ section:nth-child(2) {
     background-image: url(https://cdn.futura-sciences.com/sources/images/Rub-al-Khali-Desert-Dune.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire pour positionner le ::before */
-    height: 100vh; /* Hauteur de la section égale à la fenêtre */
+    position: relative; /* Nécessaire -> before*/
+    height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
     align-items: center;
@@ -115,15 +115,18 @@ section:nth-child(2) img {
     margin-left: 100px;
     display: flex;
     justify-self: right;
+    z-index: 2;
 }
 
-section:nth-child(2) pre {
+section:nth-child(2) p {
     max-width: 50%;
-    text-align: left;
+    text-align: center;
     color: #1a1a1a;
     font-size: large;
     background-color: rgba(255, 255, 255, 0.5);
-    padding-right: 100px;
+    padding: 10px;
+    border-radius: 5%;
+    z-index: 2;
 }
 
 section:nth-child(2) img p{
