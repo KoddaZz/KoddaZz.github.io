@@ -107,7 +107,6 @@ section:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 section:nth-child(2) img {
@@ -120,7 +119,6 @@ section:nth-child(2) img {
 }
 
 section:nth-child(2) p {
-    max-width: 50%;
     text-align: center;
     color: #1a1a1a;
     font-size: large;
@@ -130,16 +128,34 @@ section:nth-child(2) p {
     border-radius: 5%;
     padding: 10px;
     z-index: 2;
+    margin-bottom: 10px; /* Laisser la place pour le bouton */
 }
 
 section:nth-child(2) a {
     text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+    
+}
+
+section:nth-child(2) a:hover {
+    background-color: #1a1a1a;
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+}
+
+section:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
 }
 
 section:nth-child(2) img p{
-    backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(255, 255, 255, 0.18)
+    flex-basis: 50%;
 }
 
 /* Gradient 1ere moitié de la 2nde section */
