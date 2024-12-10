@@ -98,7 +98,7 @@ section:nth-child(odd){
 
 /* Deuxième section */
 section:nth-child(2) {
-    background-image: url(https://cdn-www.konbini.com/files/2023/03/dune-head-3.jpg);
+    background-image: url(https://cdn.futura-sciences.com/sources/images/Rub-al-Khali-Desert-Dune.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
