@@ -48,7 +48,7 @@ body {
 	background: transparent;
 	color : red ;
 	border: 2px solid rgba(255, 254, 254, 0.2);
-	backdrop-filter: blur(8px);
+	
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
 	border-bottom-left-radius: 10%;
@@ -127,6 +127,23 @@ body {
 	cursor: pointer;
 
 }
+
+
+
+
+.formulaire:hover {
+	transition: 2s;
+	backdrop-filter: blur(8px);
+}
+
+#envoi:hover {
+	transition: 2.5s;
+	background-color: #f4ff24;
+}
+
+
+
+
 
 
 .formulaire input::placeholder {
