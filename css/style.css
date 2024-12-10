@@ -140,6 +140,7 @@ section:nth-child(2) a {
     background-color: var(--bg-text-clr);
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 2;
     
 }
 
@@ -167,5 +168,16 @@ section:nth-child(2)::before {
     right: 0;
     height: 50%; /* gradient commence à partir de la moitié */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+section:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* commence moitié de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
