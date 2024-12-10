@@ -55,7 +55,6 @@ main {
 
 .formulaire {
 	background: transparent;
-	color : red ;
 	border: 2px solid rgba(255, 254, 254, 0.2);
 	
 	border-top-left-radius: 10%;
@@ -86,12 +85,13 @@ main {
 	padding:2.5% ;
 	box-sizing: border-box;
 	font-size: 135%;
-	color: rgb(248, 3, 23);
+	background-color: #fbe7ac80;
+	color: rgb(0, 0, 0);
 	/* text-shadow: 0 0 10px #fcfcfc,
 				 0 0 20px #ffffff,
 				 0 0 40px #ffffff,
 				 0 0 80px #ffffff; */
-	backdrop-filter: blur(150px);
+	/*backdrop-filter: blur(150px);*/
 }
 
 .formulaire #commentaires {
@@ -155,9 +155,6 @@ main {
 
 
 
-.formulaire input::placeholder {
-	color: rgb(248, 3, 48);
-}
 
 
 #contact-heading {
