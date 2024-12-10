@@ -182,6 +182,7 @@ section:nth-child(2)::after {
     z-index: 1;
 }
 
+/* Troisième section */
 section:nth-child(3) {
     background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
     background-size: cover;
@@ -241,7 +242,7 @@ section:nth-child(3) div {
 }
 
 
-/* Gradient 1ere moitié de la 2nde section */
+/* Gradient 1ere moitié de la 3e section */
 section:nth-child(3)::before {
     content: '';
     position: absolute;
@@ -253,6 +254,7 @@ section:nth-child(3)::before {
     z-index: 1;
 }
 
+/* Gradient 2e moitié de la 3e section */
 section:nth-child(3)::after {
     content: '';
     position: absolute;
