@@ -9,7 +9,7 @@
     border-radius: 10px;
     justify-content: center;
     background-color: rgba(24, 26, 24, 0.4);
-    color: var(--bg-text-clr);
+    color: #fbe7ac;
     z-index: 3;
 
 }
@@ -21,11 +21,14 @@
 }
 
 .menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
     padding:20px;
+    color: #fbe7ac;
 }
 
 .menu ul li a:hover{
-    background-color: #fff;
+    background-color: #fbe7ac;
     color: #1a1a1a;
     border-radius: 7px;
     
