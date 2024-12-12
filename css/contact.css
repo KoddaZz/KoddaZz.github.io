@@ -57,9 +57,10 @@ main {
 
 
 .formulaire {
+	transition: 2s ease;
+	backdrop-filter: blur(0);
 	background: transparent;
 	border: 2px solid rgba(255, 254, 254, 0.2);
-	
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
 	border-bottom-left-radius: 10%;
@@ -122,6 +123,8 @@ main {
 }
 
 .formulaire #envoi {
+	transition: 2.5s ease;
+	background-color: none;
 	display : flex;
 	justify-content: center;
 	color: rgb(245, 188, 32);
