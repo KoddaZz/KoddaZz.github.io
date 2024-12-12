@@ -85,7 +85,6 @@
 body{
     width: 100%;
     min-height: 100dvh;
-    --f -cursor-text: url();
 }
 
 /* affichage à la verticale avec flex */
