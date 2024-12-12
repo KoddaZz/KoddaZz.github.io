@@ -48,7 +48,6 @@
 body{
     width: 100%;
     min-height: 100dvh;
-    --f -cursor-text: url();
 }
 
 /* affichage à la verticale avec flex */
@@ -102,7 +101,7 @@ section:nth-child(2) {
     background-image: url(https://cdn.futura-sciences.com/sources/images/Rub-al-Khali-Desert-Dune.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
@@ -349,9 +348,4 @@ section:nth-child(3)::after {
     height: 50%; /* Le gradient commence à la 2nde moitié de la section */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
-}
-g
-gf
-g{
-    g;
 }
