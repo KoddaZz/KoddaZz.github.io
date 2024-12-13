@@ -2,6 +2,7 @@
 :root {
     --bg-clr: #f0f0f0;
     --bg-text-clr: #fbe7ac;
+    --bg-button-hovering-clr: rgba(24, 26, 24, 0.4); 
 }
 
 /* reset css */
@@ -53,7 +54,7 @@
 .menu .submenu {
     display: none;
     position: absolute;
-    background-color: rgba(24, 26, 24, 0.4);
+    background-color: var(--bg-button-hovering-clr);
     padding: 5px 0;
     margin: 20px 0;
 
@@ -182,7 +183,7 @@ section:nth-child(2) a {
 }
 
 section:nth-child(2) a:hover {
-    background-color: #1a1a1a;
+    background-color: var(--bg-button-hovering-clr);
     color: var(--bg-text-clr);
     border-radius: 7px;
 }
@@ -352,7 +353,7 @@ section:nth-child(3) a {
 }
 
 section:nth-child(3) a:hover {
-    background-color: #1a1a1a;
+    background-color: var(--bg-button-hovering-clr);
     color: var(--bg-text-clr);
     border-radius: 7px;
 }
