@@ -1,11 +1,16 @@
 .menu {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
+    padding: 0px 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: #1a1a1a;
-    color:#fff;
+    background-color: rgba(13, 29, 13, 0.4);
+    color: var(--bg-text-clr);
+    z-index: 3;
 }
 
 .menu ul{
@@ -15,15 +20,55 @@
 }
 
 .menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
     padding:20px;
+    color: var(--bg-text-clr);
 }
 
 .menu ul li a:hover{
-    background-color: #fff;
+    background-color: var(--bg-text-clr);
     color: #1a1a1a;
     border-radius: 7px;
-    
 }
+
+/*menu déroulant */
+.menu .dropdown {
+    position: relative; 
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-button-hovering-clr);
+    padding: 5px 0;
+    margin: 20px 0;
+
+}
+
+.menu .submenu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.menu .submenu li a {
+    text-decoration: none;
+    color: var(--bg-text-clr);
+}
+
+.menu .submenu li a:hover {
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
 
 body {
     display: flex;
