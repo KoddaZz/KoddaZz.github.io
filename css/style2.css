@@ -24,3 +24,13 @@
     border-radius: 7px;
     
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 99vh;
+    background-image: url(media/Paul-Atreides.png);
+    background-size: cover;
+    margin: 0;
+}
