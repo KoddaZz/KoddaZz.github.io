@@ -110,12 +110,6 @@ section{
     background-color: var(--bg-clr);
 }
 
-/* pair */
-section:nth-child(odd){
-    background-color: transparent;
-    color: var(--bg-clr);
-}
-
 /* Hero */
 #hero {
     background-image: url("https://w.wallhaven.cc/full/g8/wallhaven-g8lw9l.jpg");
@@ -166,7 +160,7 @@ section:nth-child(odd){
     background: transparent;
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 5%;
+    border-radius: 1em;
     padding: 10px;
     z-index: 2;
     margin-bottom: 10px; /* Laisser la place pour le bouton */
@@ -252,7 +246,7 @@ section:nth-child(odd){
     background: transparent;
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 5%;
+    border-radius: 1em;
     padding: 10px;
     z-index: 2;
     margin-bottom: 10px; /* Laisser la place pour le bouton */
@@ -336,7 +330,7 @@ section:nth-child(odd){
     background: transparent;
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 5%;
+    border-radius: 1em;
     padding: 10px;
     z-index: 2;
     margin-bottom: 10px; /* Laisser la place pour le bouton */
@@ -420,7 +414,7 @@ section:nth-child(odd){
     background: transparent;
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 5%;
+    border-radius: 1em;
     padding: 10px;
     z-index: 2;
     margin-bottom: 10px; /* Laisser la place pour le bouton */
@@ -474,6 +468,347 @@ section:nth-child(odd){
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
+
+/*SIXIEME SECTION */
+
+#section5 {
+    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Nécessaire -> before*/
+    height: 100vh; /* 100vh = hauteur fenêtre */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section5 img {
+    max-width: 45%;
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    justify-self: right;
+    z-index: 2;
+}
+
+#section5 p {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: large;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    padding: 10px;
+    z-index: 2;
+    margin-bottom: 10px; /* Laisser la place pour le bouton */
+}
+
+#section5 a {
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+    z-index: 2;
+    
+}
+
+#section5 a:hover {
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+}
+
+#section5 div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Gradient 1ere moitié de la 3e section */
+#section5::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 50%; /* gradient commence à partir de la moitié */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* Gradient 2e moitié de la 3e section */
+#section5::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* commence moitié de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* SEPTIEME SECTION */
+
+#section6 {
+    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Nécessaire -> before*/
+    height: 100vh; /* 100vh = hauteur fenêtre */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section6 img {
+    max-width: 45%;
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    justify-self: right;
+    z-index: 2;
+}
+
+#section6 p {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: large;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    padding: 10px;
+    z-index: 2;
+    margin-bottom: 10px; /* Laisser la place pour le bouton */
+}
+
+#section6 a {
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+    z-index: 2;
+    
+}
+
+#section6 a:hover {
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+}
+
+#section6 div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Gradient 1ere moitié de la 3e section */
+#section6::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 50%; /* gradient commence à partir de la moitié */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* Gradient 2e moitié de la 3e section */
+#section6::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* commence moitié de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* HUITIEME SECTION */
+
+#section7 {
+    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Nécessaire -> before*/
+    height: 100vh; /* 100vh = hauteur fenêtre */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section7 img {
+    max-width: 45%;
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    justify-self: right;
+    z-index: 2;
+}
+
+#section7 p {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: large;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    padding: 10px;
+    z-index: 2;
+    margin-bottom: 10px; /* Laisser la place pour le bouton */
+}
+
+#section7 a {
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+    z-index: 2;
+    
+}
+
+#section7 a:hover {
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+}
+
+#section7 div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Gradient 1ere moitié de la 3e section */
+#section7::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 50%; /* gradient commence à partir de la moitié */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* Gradient 2e moitié de la 3e section */
+#section7::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* commence moitié de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/*NEUVIEME SECTION */
+
+#section8 {
+    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Nécessaire -> before*/
+    height: 100vh; /* 100vh = hauteur fenêtre */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section8 img {
+    max-width: 45%;
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    justify-self: right;
+    z-index: 2;
+}
+
+#section8 p {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: large;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    padding: 10px;
+    z-index: 2;
+    margin-bottom: 10px; /* Laisser la place pour le bouton */
+}
+
+#section8 a {
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+    z-index: 2;
+    
+}
+
+#section8 a:hover {
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+}
+
+#section8 div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Gradient 1ere moitié de la 3e section */
+#section8::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 50%; /* gradient commence à partir de la moitié */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* Gradient 2e moitié de la 3e section */
+#section8::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* commence moitié de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
 
 #retourneHaut {
     position: fixed;
