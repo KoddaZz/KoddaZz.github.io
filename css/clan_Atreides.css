@@ -12,47 +12,7 @@
     color: #fbe7ac;
     z-index: 3;
 }
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
 
-.dropdown .dropbouton {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; 
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/* important */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-.dropdown-content a:hover {
-    background-color: #1a1a1a
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-/* ce qui à en bas est important*/
 .menu ul{
     display: flex;
     align-items: center;
@@ -67,8 +27,145 @@
 }
 
 .menu ul li a:hover{
-    background-color:#fbe7ac;
+    background-color: #fbe7ac;
     color: #1a1a1a;
     border-radius: 7px;
-    
+}
+
+/*menu déroulant */
+.menu .dropdown {
+    position: relative; 
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color:  rgba(24, 26, 24, 0.4);
+    padding: 5px 0;
+    margin: 20px 0;
+
+}
+
+.menu .submenu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.menu .submenu li a {
+    text-decoration: none;
+    color: #fbe7ac;
+}
+
+.menu .submenu li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+/* css du figma  */
+body {
+    background-image: url(banniere_atreides.png);
+    background-size: cover;
+}
+
+main{
+    font-size: 125%;
+    background: rgba(217, 217, 217, 0.25);
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.haut_cadre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+
+}
+.haut_cadre img {
+    width: 120px;
+    height: 70px;
+}
+#titre{
+    border: 2px solid rgba(24, 26, 24, 0.6);
+    background-color: rgb(128, 0, 0);
+    border-radius: 1em;
+    padding: 10px;
+    margin: 5px;
+}
+
+#Appartenance {
+
+    border: 2px solid rgba(24, 26, 24, 0.6);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+#Parents {
+
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+#Acteurs {
+
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+#lieu{ 
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+#date{
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+#texte{
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.milieu_cadre{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+}
+.bas_cadre{ 
+    display:flex;
+    align-items: center;
+}
+.bouton_cadre{
+    display:flex;
+    justify-content: space-around;
 }
