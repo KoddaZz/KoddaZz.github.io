@@ -809,33 +809,206 @@ section{
     z-index: 1;
 }
 
+/*DIXIEME SECTION */
+
+#section9 {
+    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Nécessaire -> before*/
+    height: 100vh; /* 100vh = hauteur fenêtre */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section9 img {
+    max-width: 45%;
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    justify-self: right;
+    z-index: 2;
+}
+
+#section9 p {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: large;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    padding: 10px;
+    z-index: 2;
+    margin-bottom: 10px; /* Laisser la place pour le bouton */
+}
+
+#section9 a {
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+    z-index: 2;
+    
+}
+
+#section9 a:hover {
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+}
+
+#section9 div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Gradient 1ere moitié de la 3e section */
+#section9::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 50%; /* gradient commence à partir de la moitié */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* Gradient 2e moitié de la 3e section */
+#section9::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* commence moitié de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/*ONZIEME SECTION */
+
+#section10 {
+    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Nécessaire -> before*/
+    height: 100vh; /* 100vh = hauteur fenêtre */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section10 img {
+    max-width: 45%;
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    justify-self: right;
+    z-index: 2;
+}
+
+#section10 p {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: large;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    padding: 10px;
+    z-index: 2;
+    margin-bottom: 10px; /* Laisser la place pour le bouton */
+}
+
+#section10 a {
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+    z-index: 2;
+    
+}
+
+#section10 a:hover {
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+}
+
+#section10 div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Gradient 1ere moitié de la 3e section */
+#section10::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 50%; /* gradient commence à partir de la moitié */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+/* Gradient 2e moitié de la 3e section */
+#section10::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* commence moitié de la section */
+    left: 0;
+    right: 0;
+    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
 
 #retourneHaut {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    font-size: 16px;
+    font-size: 75px;
+
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
     padding:0;
-    color: #1a1a1a;
-    border-radius: 7px;
+    color: #fbe7ac;
+    border-radius: 50%;
     outline: none;
     border: none;
-    background-color: transparent;
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
-
+    background-color: rgba(24, 26, 24, 0.7);
+    cursor: pointer;
 }
 
-#retourneHaut img {
-    display: block;
-    height: 100px;
-    width: 100px;
+
+#retourneHaut:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 50%;
 }
 
 .basPage {
