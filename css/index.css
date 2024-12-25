@@ -820,17 +820,22 @@ section{
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    padding:0;
     color: #1a1a1a;
     border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
 
 }
 
-#retourneHaut:hover {
-    background-color: rgba(24, 26, 24, 0.7);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
+#retourneHaut img {
+    display: block;
+    height: 100px;
+    width: 100px;
 }
 
 .basPage {
