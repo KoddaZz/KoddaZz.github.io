@@ -350,7 +350,7 @@ section{
 }
 
 #section3 a:hover {
-    background-color: var(--bg-button-hovering-clr);
+    background-color: var(--bg-button-txt-clr);
     color: var(--bg-text-clr);
     border-radius: 7px;
 }
@@ -814,20 +814,23 @@ section{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none; /* caché */
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1000;
     font-size: 16px;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+
 }
 
 #retourneHaut:hover {
-    background-color: #0056b3;
+    background-color: rgba(24, 26, 24, 0.7);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
 }
 
 .basPage {
