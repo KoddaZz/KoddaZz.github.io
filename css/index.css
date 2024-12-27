@@ -219,7 +219,7 @@ section{
 
 /* Troisième section */
 #section2 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section1.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -303,7 +303,7 @@ section{
 
 /* QUATRIEME SECTION A FAIRE */
 #section3 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section6.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -387,7 +387,7 @@ section{
 
 /*CINQUIEME SECTION*/
 #section4 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section4.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -472,7 +472,7 @@ section{
 /*SIXIEME SECTION */
 
 #section5 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/index_img_fond_section5.png);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -557,7 +557,7 @@ section{
 /* SEPTIEME SECTION */
 
 #section6 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section7.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -642,7 +642,7 @@ section{
 /* HUITIEME SECTION */
 
 #section7 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section8.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -727,7 +727,7 @@ section{
 /*NEUVIEME SECTION */
 
 #section8 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section2.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -812,7 +812,7 @@ section{
 /*DIXIEME SECTION */
 
 #section9 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section9.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
@@ -897,7 +897,7 @@ section{
 /*ONZIEME SECTION */
 
 #section10 {
-    background-image: url(https://images.ctfassets.net/qpn1gztbusu2/2vEDxe1kRlBNNMqbfTybxm/ea2f5c1a12fb49ac9a10a64624d126bb/J0662-05-Magazin-Blog-Post-2.jpg?fm=jpg&w=3840&q=70);
+    background-image: url(media/img_fond_section10.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before*/
