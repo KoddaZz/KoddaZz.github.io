@@ -15,6 +15,9 @@ body{
     cursor: url('./media/bucket_kfc_curseur.png'), auto;
     font-family: Arial, Helvetica, sans-serif;
 }
+audio{
+    display: none;
+}
 
 .menu {
     height: 60px;
@@ -241,7 +244,8 @@ section{
     text-align: center;
     color: white;
     z-index: 2;
-    font-size: 2em;
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
 
@@ -255,7 +259,7 @@ section{
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
-    padding: 20px;
+    padding: 17px; /*Ajustement au niv de l'hover de l'img ( échec ) */
 
     z-index: 2;
 }
@@ -263,17 +267,24 @@ section{
 /* Image */
 #elementsSection2 img {
     max-width: 45%;
-    height: auto; 
-    flex-shrink: 0; 
-    border-radius: 5px; 
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease; /* Animation fluide de l'agrandissement */
     z-index: 2;
+}
+
+#elementsSection2 img:hover {
+    transform: scale(1.1); /* Agrandissement de 10% au survol */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
 }
 
 /* Texte */
 #elementsSection2 p {
     text-align: justify; 
     color: #1a1a1a;
-    font-size: large;
+    font-size: 1.1em;
     padding: 20px;
     line-height: 1.6; 
     z-index: 2;
