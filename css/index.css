@@ -13,6 +13,7 @@
 }
 body{
     cursor: url('./media/bucket_kfc_curseur.png'), auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu {
@@ -217,89 +218,120 @@ section{
     z-index: 1;
 }
 
-/* Troisième section */
+
+/* Section 2 */
 #section2 {
     background-image: url(media/img_fond_section1.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section2 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
+
+#section2 h1 {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-size: 2em;
+}
+
+
+#elementsSection2 {
     display: flex;
-    justify-self: right;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    padding: 20px;
+
     z-index: 2;
 }
 
-#section2 p {
-    text-align: center;
+/* Image */
+#elementsSection2 img {
+    max-width: 45%;
+    height: auto; 
+    flex-shrink: 0; 
+    border-radius: 5px; 
+    z-index: 2;
+}
+
+/* Texte */
+#elementsSection2 p {
+    text-align: justify; 
     color: #1a1a1a;
     font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    padding: 20px;
+    line-height: 1.6; 
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    margin-bottom: 10px; 
 }
 
-#section2 a {
+/* Bouton lien */
+#elementsSection2 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection2 a:hover {
+    background-color: #1a1a1a; 
+    color: #fff;
     z-index: 2;
-    
 }
 
-#section2 a:hover {
-    background-color: #1a1a1a;
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section2 div {
+#elementsSection2 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section2::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section2::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
+
 
 /* QUATRIEME SECTION A FAIRE */
 #section3 {
