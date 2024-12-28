@@ -13,7 +13,7 @@
 }
 body{
     cursor: url('./media/bucket_kfc_curseur.png'), auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
 }
 audio{
     display: none;
@@ -251,11 +251,12 @@ section{
 
 #elementsSection2 {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     align-items: center; 
     gap: 20px; 
     width: 80%;
 
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -284,7 +285,7 @@ section{
 #elementsSection2 p {
     text-align: justify; 
     color: #1a1a1a;
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 20px;
     line-height: 1.6; 
     z-index: 2;
