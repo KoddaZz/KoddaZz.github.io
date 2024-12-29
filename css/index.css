@@ -420,8 +420,7 @@ section{
 
 /* Image */
 #elementsSection3 img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 45%;
     height: auto;
     flex-shrink: 0;
     border-radius: 1em;
