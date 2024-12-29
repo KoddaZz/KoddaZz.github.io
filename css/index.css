@@ -135,88 +135,122 @@ section{
     z-index: 1;
 }
 
-/* Deuxième section */
+/* Première section */
 #section1 {
-    background-image: url(https://cdn.futura-sciences.com/sources/images/Rub-al-Khali-Desert-Dune.jpg);
+    background-image: url(media/index/img_fond_section1.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section1 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section1 p {
+#section1 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section1 a {
+
+#elementsSection1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection1 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection1 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection1 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection1 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection1 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section1 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section1 div {
+#elementsSection1 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
-#section1 img p{
-    flex-basis: 50%;
-}
 
-/* Gradient 1ere moitié de la 2nde section */
 #section1::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
+
 #section1::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
@@ -224,7 +258,7 @@ section{
 
 /* Section 2 */
 #section2 {
-    background-image: url(media/img_fond_section1.jpg);
+    background-image: url(media/index/img_fond_section2.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -256,12 +290,10 @@ section{
     gap: 20px; 
     width: 80%;
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
-    padding: 17px; /*Ajustement au niv de l'hover de l'img ( échec ) */
-
     z-index: 2;
 }
 
@@ -308,8 +340,8 @@ section{
 }
 
 #elementsSection2 a:hover {
-    background-color: #1a1a1a; 
-    color: #fff;
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
 }
 
@@ -345,680 +377,969 @@ section{
 }
 
 
-/* QUATRIEME SECTION A FAIRE */
+/* Section 3 */
 #section3 {
-    background-image: url(media/img_fond_section6.jpg);
+    background-image: url(media/index/img_fond_section3.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section3 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section3 p {
+#section3 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section3 a {
+
+#elementsSection3 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection3 img {
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection3 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection3 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection3 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection3 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section3 a:hover {
-    background-color: var(--bg-button-txt-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section3 div {
+#elementsSection3 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section3::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section3::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/*CINQUIEME SECTION*/
+/* SECTION 4 */
 #section4 {
-    background-image: url(media/img_fond_section4.jpg);
+    background-image: url(media/index/img_fond_section4.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section4 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section4 p {
+#section4 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section4 a {
+
+#elementsSection4 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection4 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection4 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection4 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection4 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection4 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section4 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section4 div {
+#elementsSection4 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section4::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section4::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/*SIXIEME SECTION */
+/* SECTION 5 */
 
 #section5 {
-    background-image: url(media/index_img_fond_section5.png);
+    background-image: url(media/index/img_fond_section5.png);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section5 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section5 p {
+#section5 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section5 a {
+
+#elementsSection5 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection5 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection5 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection5 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection5 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection5 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section5 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section5 div {
+#elementsSection5 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section5::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section5::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* SEPTIEME SECTION */
+/* SECTION  6*/
 
 #section6 {
-    background-image: url(media/img_fond_section7.jpg);
+    background-image: url(media/index/img_fond_section6.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section6 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section6 p {
+#section6 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section6 a {
+
+#elementsSection6 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection6 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection6 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection6 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection6 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection6 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section6 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section6 div {
+#elementsSection6 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section6::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section6::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* HUITIEME SECTION */
+/*  SECTION 7 */
 
 #section7 {
-    background-image: url(media/img_fond_section8.jpg);
+    background-image: url(media/index/img_fond_section7.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section7 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section7 p {
+#section7 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section7 a {
+
+#elementsSection7 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection7 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection1 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection7 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection7 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection7 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section7 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section7 div {
+#elementsSection7 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section7::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section7::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/*NEUVIEME SECTION */
+/* SECTION 8 */
 
 #section8 {
-    background-image: url(media/img_fond_section2.jpg);
+    background-image: url(media/index/img_fond_section8.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section8 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section8 p {
+#section8 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section8 a {
+
+#elementsSection8 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection8 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection8 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection8 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection8 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection8 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section8 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section8 div {
+#elementsSection8 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section8::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section8::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/*DIXIEME SECTION */
+/* SECTION 9 */
 
 #section9 {
-    background-image: url(media/img_fond_section9.jpg);
+    background-image: url(media/index/img_fond_section9.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section9 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section9 p {
+#section9 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section9 a {
+
+#elementsSection9 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection9 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection9 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection9 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection9 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection9 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section9 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section9 div {
+#elementsSection9 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section9::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section9::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/*ONZIEME SECTION */
+/* SECTION 10 */
 
 #section10 {
-    background-image: url(media/img_fond_section10.jpg);
+    background-image: url(media/index/img_fond_section10.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Nécessaire -> before*/
+    position: relative; /* Nécessaire -> before */
     height: 100vh; /* 100vh = hauteur fenêtre */
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+
+    z-index: 0;
 }
 
-#section10 img {
-    max-width: 45%;
-    height: 400px;
-    margin-left: 100px;
-    display: flex;
-    justify-self: right;
-    z-index: 2;
-}
 
-#section10 p {
+#section10 h1 {
     text-align: center;
-    color: #1a1a1a;
-    font-size: large;
-    background: transparent;
-    backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
-    padding: 10px;
+    color: white;
     z-index: 2;
-    margin-bottom: 10px; /* Laisser la place pour le bouton */
+    font-family: Montserrat;
+    font-size: 3em;
 }
 
-#section10 a {
+
+#elementsSection10 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 1em;
+    z-index: 2;
+}
+
+/* Image */
+#elementsSection10 img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#elementsSection10 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Texte */
+#elementsSection10 p {
+    text-align: justify; 
+    color: #1a1a1a;
+    font-size: 1.3em;
+    padding: 20px;
+    line-height: 1.6; 
+    z-index: 2;
+    margin-bottom: 10px; 
+}
+
+/* Bouton lien */
+#elementsSection10 a {
+    display: inline-block; 
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    background-color: var(--bg-text-clr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--bg-text-clr); 
     color: #1a1a1a;
     border-radius: 7px;
+    z-index: 3;
+}
+
+#elementsSection10 a:hover {
+    background-color:rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     z-index: 2;
-    
 }
 
-#section10 a:hover {
-    background-color: var(--bg-button-hovering-clr);
-    color: var(--bg-text-clr);
-    border-radius: 7px;
-}
 
-#section10 div {
+#elementsSection10 div {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 
-/* Gradient 1ere moitié de la 3e section */
 #section10::before {
     content: '';
     position: absolute;
     top: 0; 
     left: 0;
     right: 0;
-    height: 50%; /* gradient commence à partir de la moitié */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
-/* Gradient 2e moitié de la 3e section */
+
 #section10::after {
     content: '';
     position: absolute;
-    top: 50%; /* commence moitié de la section */
+    top: 50%; 
     left: 0;
     right: 0;
-    height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+    height: 50%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
