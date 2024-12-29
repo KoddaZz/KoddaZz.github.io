@@ -168,10 +168,11 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
-    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 1em;
     z-index: 2;
 }
@@ -289,6 +290,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -410,6 +412,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -530,6 +533,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -651,6 +655,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -772,6 +777,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -893,6 +899,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -1014,6 +1021,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -1135,6 +1143,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
@@ -1256,6 +1265,7 @@ section{
     align-items: center; 
     gap: 20px; 
     width: 80%;
+    padding: 30px;
 
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
