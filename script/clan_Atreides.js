@@ -2,7 +2,7 @@
 const personnages = [
     {
         nom: "Paul (Muad’dib) Atréides",
-        image: "./paul_atreides.jpg",
+        image: "./paul_atreides.jpeg",
         appartenance: "Clan Atréides, Fremen",
         parents: "Leto Atréides, Jessica Harkonnen",
         acteurs: "Kyle MacLachlan (1984), Timothée Chalamet (2021)",
@@ -27,7 +27,7 @@ const personnages = [
         appartenance: "Soeur Bene Gesserit, Clan Atréides",
         parents: "Baron Harkonnen (secret)",
         acteurs: "Francesca Annis (1984), Rebecca Ferguson (2021)",
-        date: "10110 AG",
+        date: "10154 AG",
         lieu: "Wallach IX",
         texte: "Une femme forte et loyale, mère de Paul.",
     },
@@ -43,7 +43,7 @@ const personnages = [
     },
     {
         nom: "Gurney Halleck",
-        image: "./gurney_halleck.jpg",
+        image: "./gurney_halleck.webp",
         appartenance: "Clan Atréides",
         parents: "Inconnus",
         acteurs: "Patrick Stewart (1984), Josh Brolin (2021)",
@@ -70,11 +70,11 @@ function changer_vers_lavant() {
     titre.innerHTML = personnages[index].nom;
     image.src = personnages[index].image;
     image.alt = personnages[index].nom;
-    appartenance.innerHTML = `<b>Appartenance :</b> ${personnages[index].appartenance}`;
-    parents.innerHTML = `<b>Parents :</b> ${personnages[index].parents}`;
-    acteurs.innerHTML = `<b>Acteurs :</b> ${personnages[index].acteurs}`;
-    date.innerHTML = `<b>Date de naissance :</b> ${personnages[index].date}`;
-    lieu.innerHTML = `<b>Lieu de naissance :</b> ${personnages[index].lieu}`;
+    appartenance.innerHTML = "<b>Appartenance :</b>" + personnages[index].appartenance; //notation différente car on incrémente des paragraphes avec des parties en gras 
+    parents.innerHTML = "<b>Parents :</b>" + personnages[index].parents;
+    acteurs.innerHTML = "<b>Acteurs :</b>" + personnages[index].acteurs;
+    date.innerHTML = "<b>Date de naissance :</b>" + personnages[index].date;
+    lieu.innerHTML = "<b>Lieu de naissance :</b>" + personnages[index].lieu;
     texte.innerHTML = personnages[index].texte;
 
     //passe au personnages suivant
@@ -98,12 +98,13 @@ function changer_vers_larriere() {
     titre.innerHTML = personnages[index].nom;
     image.src = personnages[index].image;
     image.alt = personnages[index].nom;
-    appartenance.innerHTML = `<b>Appartenance :</b> ${personnages[index].appartenance}`;
-    parents.innerHTML = `<b>Parents :</b> ${personnages[index].parents}`;
-    acteurs.innerHTML = `<b>Acteurs :</b> ${personnages[index].acteurs}`;
-    date.innerHTML = `<b>Date de naissance :</b> ${personnages[index].date}`;
-    lieu.innerHTML = `<b>Lieu de naissance :</b> ${personnages[index].lieu}`;
+    appartenance.innerHTML = "<b>Appartenance :</b>" + personnages[index].appartenance;
+    parents.innerHTML = "<b>Parents :</b>" + personnages[index].parents;
+    acteurs.innerHTML = "<b>Acteurs :</b>" + personnages[index].acteurs;
+    date.innerHTML = "<b>Date de naissance :</b>" + personnages[index].date;
+    lieu.innerHTML = "<b>Lieu de naissance :</b>" + personnages[index].lieu;
     texte.innerHTML = personnages[index].texte;
     index = (index - 1 + personnages.length) % personnages.length;
+    //personnages.lenght = longueur du tableau l'ajouter permet d'éviter un index négatif
+    // utiliser le modulo permet ici de revenir à la fin du tableau si on à un index négatif
 }
-
