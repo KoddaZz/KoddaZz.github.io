@@ -116,7 +116,7 @@ section{
 
 /* Hero */
 #hero {
-    background-image: url("https://w.wallhaven.cc/full/g8/wallhaven-g8lw9l.jpg");
+    background-image: url("media/img_fond_principal_dune.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh; /* Hauteur de la section égale à la fenêtre */
