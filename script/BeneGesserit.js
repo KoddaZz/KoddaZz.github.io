@@ -1,7 +1,7 @@
 const personnages = [
     {
         nom: "Révérende Mère Gaius Helen",
-        image: "./reverende_mere.jpg",
+        image: "css/media/reverende_mere.jpg",
         appartenance: "Sœurs Bene Gesserit",
         parents: "Inconnus",
         acteurs: "Siân Phillips (1984), Charlotte Rampling (2021)",
@@ -11,7 +11,7 @@ const personnages = [
     },
     {
         nom: "Jessica Harkonnen",
-        image: "./jessica_harkonnen.jpg",
+        image: "css/media/jessica_harkonnen.jpg",
         appartenance: "Sœurs Bene Gesserit, Clan Atréides",
         parents: "Baron Vladimir Harkonnen (secret)",
         acteurs: "Francesca Annis (1984), Rebecca Ferguson (2021)",
@@ -21,7 +21,7 @@ const personnages = [
     },
     {
         nom: "Alia Atréides",
-        image: "./alia_atreides.jpg",
+        image: "css/media/alia_atreides.jpg",
         appartenance: "Sœurs Bene Gesserit, Clan Atréides",
         parents: "Jessica Harkonnen, Leto Atréides",
         acteurs: "Alicia Witt (1984), Anya Taylor Joy (2023)",
@@ -31,7 +31,7 @@ const personnages = [
     },
     {
         nom: "Princesse Irulan",
-        image: "./princesse_irulan.png",
+        image: "css/media/princesse_irulan.png",
         appartenance: "Sœurs Bene Gesserit, Maison Corrino",
         parents: "Shaddam IV, Anirul Corrino",
         acteurs: "Virginia Madsen (1984), Florence Pugh (2023)",
