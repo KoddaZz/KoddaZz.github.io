@@ -1541,3 +1541,48 @@ section{
     color: #1a1a1a;
     border-radius: 7px;
 }
+
+@media (max-width: 768px) {
+
+    #hero {
+        background-image: url("media/tel_img_fond_principal.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Hauteur de la section égale à la fenêtre */
+        position: relative; /* Nécessaire pour positionner correctement le ::before */
+        z-index: 0;
+    }
+    
+    #hero::before {
+        content: '';
+        position: absolute;
+        top: 50%; /* commence moitié de la section */
+        left: 0;
+        right: 0;
+        height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+        z-index: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        background-image: url("media/tel_img_fond_principal.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Hauteur de la section égale à la fenêtre */
+        position: relative; /* Nécessaire pour positionner correctement le ::before */
+        z-index: 0;
+    }
+    
+    #hero::before {
+        content: '';
+        position: absolute;
+        top: 50%; /* commence moitié de la section */
+        left: 0;
+        right: 0;
+        height: 50%; /* Le gradient commence à la 2nde moitié de la section */
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+        z-index: 1;
+    }
+}
