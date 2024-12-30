@@ -155,7 +155,7 @@ section{
 
 #section1 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -170,7 +170,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 1em;
@@ -284,7 +284,7 @@ section{
 
 #section2 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -299,7 +299,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -331,7 +331,7 @@ section{
 
 /* Texte */
 #elementsSection2 p {
-    text-align: justify; 
+    text-align: justify;
     color: #1a1a1a;
     font-size: 1.3em;
     padding: 20px;
@@ -413,7 +413,7 @@ section{
 
 #section3 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -428,7 +428,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -541,7 +541,7 @@ section{
 
 #section4 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -556,7 +556,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -670,7 +670,7 @@ section{
 
 #section5 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -685,7 +685,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -799,7 +799,7 @@ section{
 
 #section6 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -814,7 +814,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -928,7 +928,7 @@ section{
 
 #section7 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -943,7 +943,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -1057,7 +1057,7 @@ section{
 
 #section8 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -1072,7 +1072,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -1186,7 +1186,7 @@ section{
 
 #section9 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -1201,7 +1201,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -1315,7 +1315,7 @@ section{
 
 #section10 h1 {
     text-align: center;
-    color: white;
+    color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -1330,7 +1330,7 @@ section{
     width: 80%;
     padding: 30px;
 
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
@@ -1430,6 +1430,8 @@ section{
     right: 20px;
     z-index: 1000;
     font-size: 75px;
+
+    padding-top: 10px;
 
     height: 75px;
     width: 75px;
