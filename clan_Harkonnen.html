@@ -2,26 +2,50 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Dune - Clan Atréides</title>
+        <title>Dune - Clan Harkonnen</title>
         <link rel="icon" type="image/png" href="media/logo_dune.jpeg">
-        <link rel="stylesheet" href="css/clan_Harkonnen.css">
-
+        <link rel="stylesheet" href="clan_Harkonnen.css">
+        <script src="clan_harkonnen.js"></script> 
+    </head>
+    <body>
         <nav class="menu">
             <ul>
-                <li><a href="index.html">Acceuil</a></li>
-                <li><div class="dropdown">
-                    <button class="dropbouton">Les Personnages
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="clan_Atreides.html">Clan Atréides</a>
-                      <a href="clan_Harkonnen.html">Clan Harkonnen</a>
-                    </div>
+                <li><a href="index.html">Accueil</a></li>
+                 <li class="dropdown">
+                    <a href="personnages.html">Les Personnages ▼</a>
+                    <ul class="submenu">
+                        <li><a href="clan_Atreides.html">➤ Clan Atréides</a></li>
+                        <li><a href="clan_Harkonnen.html">➤ Clan Harkonnen</a></li>
+                        <li><a href="BeneGesserit.html">➤ BeneGesserit</a></li>
+                        <li><a href="Fremen.html">➤ Fremen</a></li>
+                    </ul>
                 </li>
-                <li><a href="films.html">Films</a></li>
+                <li><a href="page2.html">Page 2</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                    
             </ul>
         </nav> 
-
-    </head>
+        <main>
+            <h1 id="titre">Baron Vladimir Harkonnen</h1>
+            <section class="haut_cadre">
+                <img id="image" src="./vladimir_harkonnen.jpeg"alt="Vladimir Harkonnen">
+                <div id="infos">
+                    <p id="Appartenance"><b>Appartenance :</b> Clan Harkonnen</p>
+                    <p id="Parents"><b>Parents :</b>Inconnus</p>
+                    <p id="Acteurs"><b>Acteurs :</b> Kenneth McMillan (1984), Stellan Skarsgård (2021)</p>
+                </div>
+            </section>
+            <section class="milieu_cadre">
+                <p id="date"><b>Date de naissance : </b>10100 AG</p>
+                <p id="lieu"><b>Lieu de naissance : </b>Giedi Prime</p>
+            </section>
+            <section class="bas_cadre">
+                <p id="texte">Un tyran manipulateur, connu pour sa cruauté et sa soif de pouvoir.</p>
+            </section>
+            <section class="bouton_cadre">
+                <button class="style-bouton" onclick="changer_vers_larriere()">⮜</button>
+                <button class="style-bouton" onclick="changer_vers_lavant()">⮞</button>
+            </section>
+        </main>
+        
+    </body>
+</html>
