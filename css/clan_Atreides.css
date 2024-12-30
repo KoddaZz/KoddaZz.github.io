@@ -69,10 +69,11 @@
     display: block;
 }
 
-/* css du figma  */
+
 body {
     background-image: url(banniere_atreides.png);
     background-size: cover;
+
 }
 
 main{
@@ -87,6 +88,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
 .haut_cadre{
     display: flex;
     flex-direction: row;
@@ -96,7 +98,6 @@ main{
 }
 .haut_cadre img {
     width: 120px;
-    height: 70px;
 }
 #titre{
     border: 2px solid rgba(24, 26, 24, 0.6);
@@ -169,3 +170,13 @@ main{
     display:flex;
     justify-content: space-around;
 }
+.style-bouton{
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.9);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
