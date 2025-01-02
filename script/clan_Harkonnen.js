@@ -1,7 +1,7 @@
 const personnages = [
     {
         nom: "Baron Vladimir Harkonnen",
-        image: "./vladimir_harkonnen.jpeg",
+        image: "../css/media/vladimir_harkonnen.jpeg",
         appartenance: "Clan Harkonnen",
         parents: "Inconnus",
         acteurs: "Kenneth McMillan (1984), Stellan Skarsgård (2021)",
@@ -11,7 +11,7 @@ const personnages = [
     },
     {
         nom: "Feyd-Rautha Harkonnen",
-        image: "./feyd_rautha.webp",
+        image: "../css/media/feyd_rautha.webp",
         appartenance: "Clan Harkonnen",
         parents: "Abulurd Harkonnen",
         acteurs: "Sting (1984), Austin Butler (2023)",
@@ -21,7 +21,7 @@ const personnages = [
     },
     {
         nom: "Glossu Rabban Harkonnen",
-        image: "./rabban.webp",
+        image: "../css/media/rabban.webp",
         appartenance: "Clan Harkonnen",
         parents: "Abulurd Harkonnen",
         acteurs: "Paul L. Smith (1984), Dave Bautista (2021)",
