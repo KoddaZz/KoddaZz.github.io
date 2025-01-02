@@ -85,7 +85,7 @@ function changer_vers_larriere() {
     
     index--; 
     
-if (index < 0) {
-    index = personnages.length - 1; 
-}
+    if (index < 0) {
+        index = personnages.length - 1; 
+    }
 }
