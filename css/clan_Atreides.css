@@ -71,7 +71,7 @@
 
 
 body {
-    background-image: url(css/media/banniere_atreides.png);
+    background-image: url(banniere_atreides.png);
     background-size: cover;
 
 }
@@ -79,6 +79,7 @@ body {
 main{
     font-size: 125%;
     background: rgba(217, 217, 217, 0.25);
+    border-radius: 1em;
     width: 40%;
     position: absolute;
     top: 50%;
