@@ -1,33 +1,33 @@
 const personnages = [
     {
         nom: "Baron Vladimir Harkonnen",
-        image: "css/media/vladimir_harkonnen.jpeg",
+        image: "./vladimir_harkonnen.jpeg",
         appartenance: "Clan Harkonnen",
         parents: "Inconnus",
         acteurs: "Kenneth McMillan (1984), Stellan Skarsgård (2021)",
         date: "10100 AG",
         lieu: "Giedi Prime",
-        texte: "Un tyran manipulateur, connu pour sa cruauté et sa soif de pouvoir.",
+        texte: "Le Baron Vladimir Harkonnen est le chef du clan Harkonnen. Ennemi juré des Atréides, il orchestre leur chute avec l'aide de l'empereur padishah. Atteint d’une maladie dégénérative qui le rend obèse et dépendant de suspensions gravitationnelles pour se déplacer, sa condition physique est le résultat d’un poison transmis par la révérende MèreGaius Helen lors du viol de cette dernière. Ce poison a été spécifiquement conçu pour provoquer une obésité progressive et lente, détruisant ainsi la beauté physique du baron, qui était pour lui une grande fierté. Sa cruauté et son obsession pour le pouvoir en font l’un des personnages les plus redoutables de l’univers de Dune.",
     },
     {
         nom: "Feyd-Rautha Harkonnen",
-        image: "css/media/feyd_rautha.webp",
+        image: "./feyd_rautha.webp",
         appartenance: "Clan Harkonnen",
         parents: "Abulurd Harkonnen",
         acteurs: "Sting (1984), Austin Butler (2023)",
         date: "10176 AG",
         lieu: "Giedi Prime",
-        texte: "Le neveu du Baron, ambitieux et impitoyable.",
+        texte: "Feyd-Rautha Harkonnen est le neveu du Baron Vladimir Harkonnen et son héritier préféré. Jeune, charismatique et ambitieux, il est élevé pour devenir l’instrument des plans du baron, qui rêve de placer Feyd sur le trône impérial. Contrairement à son frère Rabban, Feyd est plus intelligent, manipulateur et calculateur. Cependant, sous son apparence se cache une cruauté glaciale, héritée de sa famille. Il est le produit des intrigues du clan Harkonnen, et l’un des adversaires les plus redoutables pour Paul Atréides, incarnant à la fois la ruse et la cruanté.",
     },
     {
         nom: "Glossu Rabban Harkonnen",
-        image: "css/media/rabban.webp",
+        image: "./rabban.webp",
         appartenance: "Clan Harkonnen",
         parents: "Abulurd Harkonnen",
         acteurs: "Paul L. Smith (1984), Dave Bautista (2021)",
         date: "10156 AG",
         lieu: "Giedi Prime",
-        texte: "Surnommé 'la Bête', connu pour sa brutalité et son absence de pitié.",
+        texte: "Rabban Harkonnen, surnommé la Bête, est le neveu du Baron Vladimir Harkonnen. Brutal, cruel et sans finesse, il est utilisé par le Baron comme un instrument de terreur pour gouverner Arrakis d'une main de fer. Contrairement à son frère Feyd-Rautha, qui incarne la ruse et le charme, Rabban est un tyran impulsif, connu pour sa soif de violence et son absence totale de pitié. Son règne impitoyable sur Arrakis provoque la colère et la rébellion des Fremen. Rabban est le reflet de la sauvagerie du clan Harkonnen.",
     },
 ];
 
@@ -82,8 +82,10 @@ function changer_vers_larriere() {
     date.innerHTML = "<b>Date de naissance :</b>" + personnages[index].date;
     lieu.innerHTML = "<b>Lieu de naissance :</b>" + personnages[index].lieu;
     texte.innerHTML = personnages[index].texte;
-    index = (index - 1 + personnages.length) % personnages.length;
-    //personnages.lenght = longueur du tableau l'ajouter permet d'éviter un index négatif
-    // utiliser le modulo permet ici de revenir à la fin du tableau si on à un index négatif
+    
+    index--; 
+    
+if (index < 0) {
+    index = personnages.length - 1; 
 }
-
+}
