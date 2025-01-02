@@ -1,80 +1,18 @@
-body { 
-    background-image: url("https://w.wallhaven.cc/full/g8/wallhaven-g8lw9l.jpg");
-}
-
-section { 
-    height: 100vh;
-    width: 100%;
-}
-
-.atreides{ 
-    background-image: url("https://i.redd.it/f3w0mdatorw71.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.harkonnen{ 
-    background-image: url("https://preview.redd.it/harkonnen-red-dune-v0-axszwzsb0sqd1.png?width=640&crop=smart&auto=webp&s=5ade3a93ed06354524a1b01b2f9146ea7193076a");
-    background-size: cover;
-    background-position: center;
-}
-
-.bene_gesserit{ 
-    background-image: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/02/bene-gesserit-concept.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
 .menu {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
+    padding: 0px 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: white;
-    color:#fff;
-}
-.dropdown {
-    float: left;
-    overflow: hidden;
+    background-color: rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
+    z-index: 3;
 }
 
-.dropdown .dropbouton {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; 
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/* important */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-.dropdown-content a:hover {
-    background-color: #1a1a1a
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-/* ce qui à en bas est important*/
 .menu ul{
     display: flex;
     align-items: center;
@@ -82,15 +20,82 @@ section {
 }
 
 .menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
     padding:20px;
+    color: #fbe7ac;
 }
 
 .menu ul li a:hover{
-    background-color:#fbe7ac;
+    background-color: #fbe7ac;
     color: #1a1a1a;
     border-radius: 7px;
-    
+}
+
+/*menu déroulant */
+.menu .dropdown {
+    position: relative; 
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color:  rgba(24, 26, 24, 0.4);
+    padding: 5px 0;
+    margin: 20px 0;
+
+}
+
+.menu .submenu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 
+.menu .submenu li a {
+    text-decoration: none;
+    color: #fbe7ac;
+}
+
+.menu .submenu li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+
+body {
+    background-image: url(css/media/banniere_personnages.jpg);
+    background-size: cover;
+}
+
+main{
+    font-size: 125%;
+    background: rgba(217, 217, 217, 0.25);
+    border-radius: 1em;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titre{
+    border: 2px solid rgba(24, 26, 24, 0.6);
+    background-color: #fbe7ac;
+    border-radius: 1em;
+    padding: 10px;
+    margin: 5px;
+}
+p {
+    text-align:center ;
+}
