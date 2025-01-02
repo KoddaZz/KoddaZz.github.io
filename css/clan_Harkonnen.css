@@ -71,13 +71,14 @@
 
 
 body {
-    background-image: url(https://i0.wp.com/i.redd.it/xsjng8giwxv81.jpg?ssl=1);
+    background-image: url(banniere_harkonnen.jpg);
     background-size: cover;
 }
 
 main{
     font-size: 125%;
     background: rgba(217, 217, 217, 0.25);
+    border-radius: 1em;
     width: 40%;
     position: absolute;
     top: 50%;
