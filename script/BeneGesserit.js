@@ -1,43 +1,34 @@
 const personnages = [
     {
         nom: "Révérende Mère Gaius Helen",
-        image: "css/media/reverende_mere.jpg",
+        image: "./reverende_mere.jpg",
         appartenance: "Sœurs Bene Gesserit",
         parents: "Inconnus",
         acteurs: "Siân Phillips (1984), Charlotte Rampling (2021)",
         date: "Avant 10100 AG",
         lieu: "Wallach IX",
-        texte: "Une Révérende Mère influente, conseillère politique et gardienne des secrets du Bene Gesserit.",
+        texte: "La Révérende Mère Gaius Helen est une figure énigmatique de l'univers de Dune. C'est une membre influente de l'ordre Bene Gesserit, elle est à la fois une manipulatrice politique et une détentrice de pouvoirs mentaux impressionnants. Son rôle est crucial dans les intrigues qui lient les grandes maisons et les plans des soeurs Bene Gesserit. Elle est la mentore de Lady Jessica et c'est elle qui met à l'épreuve Paul,  pour déterminer son potentiel. La Révérende Mère est un personnage complexe, elle est à la fois gardienne des traditions et actrice des grandes manœuvres du destin. ",
     },
     {
-        nom: "Jessica Harkonnen",
-        image: "css/media/jessica_harkonnen.jpg",
+        nom: "Lady jessica",
+        image: "./jessica_harkonnen.jpg",
         appartenance: "Sœurs Bene Gesserit, Clan Atréides",
         parents: "Baron Vladimir Harkonnen (secret)",
         acteurs: "Francesca Annis (1984), Rebecca Ferguson (2021)",
         date: "10154 AG",
         lieu: "Wallach IX",
-        texte: "Une Bene Gesserit formée, qui a choisi l'amour pour le Duc Leto plutôt que la mission de son ordre.",
+        texte: "Lady Jessica, membre de l'ordre Bene Gesserit, est la compagne du Duc Leto Atréides et la mère de Paul. Bien qu’elle ait été envoyée auprès de Leto pour servir les plans des Bene Gesserit, elle tombe réellement amoureuse de lui, bravant ainsi les règles de son ordre. Jessica est une femme d'une grande force intérieure et dotée d'incroyables capacités mentales et physiques, héritées de son entraînement. Après la chute du clan Atréides, elle fuit avec son fils Paul sur Arrakis. Ensemble, ils trouvent refuge parmi les Fremen, où elle gagne leur respect en devenant une Révérende Mère, une figure spirituelle vénérée.  Jessica soutient Paul dans son parcours, l’aidant à accepter son destin et à guider leur famille dans ces temps troublés.",
     },
-    {
-        nom: "Alia Atréides",
-        image: "css/media/alia_atreides.jpg",
-        appartenance: "Sœurs Bene Gesserit, Clan Atréides",
-        parents: "Jessica Harkonnen, Leto Atréides",
-        acteurs: "Alicia Witt (1984), Anya Taylor Joy (2023)",
-        date: "10191 AG",
-        lieu: "Arrakis",
-        texte: "Soeur de Paul Atréides et enfant prodige Bene Gesserit, marquée par des capacités mentales surhumaines dès sa naissance.",
-    },
+
     {
         nom: "Princesse Irulan",
-        image: "css/media/princesse_irulan.png",
+        image: "./princesse_irulan.png",
         appartenance: "Sœurs Bene Gesserit, Maison Corrino",
         parents: "Shaddam IV, Anirul Corrino",
         acteurs: "Virginia Madsen (1984), Florence Pugh (2023)",
         date: "10178 AG",
         lieu: "Kaitain",
-        texte: "Fille de l'Empereur Shaddam IV, Bene Gesserit et épouse politique de Paul Atréides.",
+        texte: "La princesse Irulan, fille de l'empereur Shaddam IV, est une femme intelligente et cultivée, mais souvent utilisée comme un pion dans les jeux de pouvoir de son père. Formée par les Bene Gesserit, elle maîtrise leurs arts. Elle est mariée à Paul Atréides dans un mariage purement politique et se retrouve prise entre son allégeance à sa famille et son rôle dans les plans des Bene Gesserit. Malgré tout, Irulan reste une figure digne et réfléchie, cherchant sa place dans un univers dominé par les luttes de pouvoir.",
     }
 ];
 
@@ -92,8 +83,10 @@ function changer_vers_larriere() {
     date.innerHTML = "<b>Date de naissance :</b>" + personnages[index].date;
     lieu.innerHTML = "<b>Lieu de naissance :</b>" + personnages[index].lieu;
     texte.innerHTML = personnages[index].texte;
-    index = (index - 1 + personnages.length) % personnages.length;
-    //personnages.lenght = longueur du tableau l'ajouter permet d'éviter un index négatif
-    // utiliser le modulo permet ici de revenir à la fin du tableau si on à un index négatif
-}
 
+    index--; 
+    
+    if (index < 0) {
+        index = personnages.length - 1; 
+    }
+}
