@@ -91,6 +91,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    z-index: -1; /* Pour que le menu depliant passse par dessus, et que ça ne pose pas de problèmes avec la souris*/
 }
 
 .formulaire h2 {
