@@ -61,7 +61,7 @@ audio{
 .menu .submenu {
     display: none;
     position: absolute;
-    background-color: var(--bg-button-hovering-clr);
+    background-color: rgba(24, 26, 24, 0.4);
     padding: 5px 0;
     margin: 20px 0;
 
@@ -72,16 +72,13 @@ audio{
     flex-direction: column;
     justify-content: space-between;
 }
-
-
-
 .menu .submenu li a {
     text-decoration: none;
-    color: var(--bg-text-clr);
+    color: #fbe7ac;
 }
 
 .menu .submenu li a:hover {
-    background-color: var(--bg-text-clr);
+    background-color: #fbe7ac;
     color: #1a1a1a;
     border-radius: 5px;
 }
@@ -89,6 +86,42 @@ audio{
 .menu .dropdown:hover .submenu {
     display: block;
 }
+
+
+.menu .submenufilms {
+    display: none;
+    position: absolute;
+    padding: 5px 0;
+    margin: 20px 0;
+}
+
+.menu .submenufilms li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu .submenufilms li a {
+    text-decoration: none;
+    color: #fbe7ac;
+    background-color: rgba(24, 26, 24, 0.4);
+    width: 100%;
+}
+
+.menu .submenufilms li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+
+}
+
+.menu .dropdown:hover .submenufilms {
+    display: block;
+}
+
+
+
 
 body{
     width: 100%;

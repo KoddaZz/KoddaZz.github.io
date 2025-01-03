@@ -107,41 +107,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 99vh;
-    background-image: url(media/Paul-Atreides.jpg);
+    background-image: url(media/Dune_Partie2_Fond.jpg);
     background-size: cover;
     margin: 0;
 }
@@ -153,3 +124,4 @@ main {
     height: auto;
     padding-top: 60px;
 }
+
