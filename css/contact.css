@@ -9,6 +9,7 @@
     justify-content: center;
     background-color: rgba(24, 26, 24, 0.4);
     color: #fbe7ac;
+    z-index: 11;
 }
 
 .menu ul {
@@ -45,6 +46,7 @@
     background-color: rgba(24, 26, 24, 0.4);
     padding: 5px 0;
     margin: 20px 0;
+
 }
 
 .menu .submenu li {
@@ -130,7 +132,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    z-index: -1; /* Pour que le menu depliant passse par dessus, et que ça ne pose pas de problèmes avec la souris*/
+    z-index: 1;
 }
 
 .formulaire h2 {
