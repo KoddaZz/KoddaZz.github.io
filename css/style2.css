@@ -35,6 +35,12 @@
     position: relative;
 }
 
+
+
+
+
+
+
 .menu .submenu {
     display: none;
     position: absolute;
@@ -63,6 +69,79 @@
 .menu .dropdown:hover .submenu {
     display: block;
 }
+
+
+
+
+
+
+
+
+
+.menu .submenufilms {
+    display: none;
+    position: absolute;
+    padding: 5px 0;
+    margin: 20px 0;
+}
+
+.menu .submenufilms li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu .submenufilms li a {
+    text-decoration: none;
+    color: #fbe7ac;
+    background-color: rgba(24, 26, 24, 0.4);
+    width: 100%;
+}
+
+.menu .submenufilms li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+
+}
+
+.menu .dropdown:hover .submenufilms {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
     display: flex;
