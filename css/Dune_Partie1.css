@@ -1,0 +1,156 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    color: #fbe7ac;
+}
+
+.menu ul li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 7px;
+}
+
+.menu .dropdown {
+    position: relative;
+}
+
+
+
+
+
+
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(24, 26, 24, 0.4);
+    padding: 5px 0;
+    margin: 20px 0;
+}
+
+.menu .submenu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu .submenu li a {
+    text-decoration: none;
+    color: #fbe7ac;
+}
+
+.menu .submenu li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+
+.menu .submenufilms {
+    display: none;
+    position: absolute;
+    padding: 5px 0;
+    margin: 20px 0;
+}
+
+.menu .submenufilms li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu .submenufilms li a {
+    text-decoration: none;
+    color: #fbe7ac;
+    background-color: rgba(24, 26, 24, 0.4);
+    width: 100%;
+}
+
+.menu .submenufilms li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+
+}
+
+.menu .dropdown:hover .submenufilms {
+    display: block;
+}
+
+
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 99vh;
+    background-image: url(media/Dune_Partie1_Fond.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 60px;
+}
+
+.cadre {
+    display : flex;
+    flex-direction: row;
+    
+}
+
+#texte {    
+    transition: 2s ease;
+    backdrop-filter: blur(0);
+    background: transparent;
+    border: 2px solid rgba(255, 254, 254, 0.2);
+    border-radius: 1em;
+    display : flex;
+    align-items: center;
+    padding:30px;
+}
+#texte:hover{
+    transition: 2s;
+    backdrop-filter: blur(8px);
+}
+.video {
+    width: 100%;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+}
