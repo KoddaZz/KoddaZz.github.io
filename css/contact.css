@@ -124,7 +124,6 @@ audio{
 
 
 
-
 body {
     display: flex;
     justify-content: center;
@@ -163,7 +162,10 @@ main {
     margin: 12px;
 }
 
-.formulaire #inputtext,
+.formulaire #textprenom,
+.formulaire #textnom,
+.formulaire #textemail,
+.formulaire #note,
 .formulaire #commentaires {
     width: 80%;
     height: 80%;

@@ -9,6 +9,7 @@
     justify-content: center;
     background-color: rgba(24, 26, 24, 0.4);
     color: #fbe7ac;
+    z-index: 11;
 }
 
 .menu ul {
@@ -89,7 +90,7 @@
     text-decoration: none;
     color: #fbe7ac;
     background-color: rgba(24, 26, 24, 0.4);
-    width: 100%;
+    width: 90%;
 }
 
 .menu .submenufilms li a:hover {
@@ -125,3 +126,46 @@ main {
     padding-top: 60px;
 }
 
+.cadre {
+    display : flex;
+    flex-direction: row;
+    
+}
+
+#texte {   
+    font-size: large;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 196, 0, 0.419);
+    border: 2px solid rgba(253, 148, 1, 0.77);
+    border-radius: 1em;
+    display : flex;
+    align-items: center;
+    padding:30px;
+    margin: 30px;
+}
+
+.video {
+    width: 100%;
+    margin-left: 200px;
+    padding: 30px;
+    border: 2px solid rgba(253, 148, 1, 0.77);
+    border-radius: 1em;
+    
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+}
+
+.video::before {
+    content: "DUNE PARTIE 2 BANDE ANNONCE";
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #e5ff00;
+    border: 2px solid rgba(253, 148, 1, 0.77);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(8px);
+}
