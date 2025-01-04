@@ -9,6 +9,7 @@
     justify-content: center;
     background-color: rgba(24, 26, 24, 0.4);
     color: #fbe7ac;
+    z-index: 11;
 }
 
 .menu ul {
@@ -89,7 +90,7 @@
     text-decoration: none;
     color: #fbe7ac;
     background-color: rgba(24, 26, 24, 0.4);
-    width: 100%;
+    width: 90%;
 }
 
 .menu .submenufilms li a:hover {

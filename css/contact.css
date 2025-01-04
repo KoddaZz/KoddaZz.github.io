@@ -1,4 +1,26 @@
+/* variables */
+:root {
+    --bg-clr: #f0f0f0;
+    --bg-text-clr: #fbe7ac;
+    --bg-button-hovering-clr: rgba(24, 26, 24, 0.4); 
+}
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    cursor: url('./media/bucket_kfc_curseur.png'), auto;
+    font-family: poppins;
+}
+audio{
+    display: none;
+}
+
 .menu {
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -7,37 +29,33 @@
     padding: 0px 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: rgba(24, 26, 24, 0.4);
-    color: #fbe7ac;
-    z-index: 11;
+    background-color: rgba(13, 29, 13, 0.4);
+    color: var(--bg-text-clr);
+    z-index: 3;
 }
 
-.menu ul {
+.menu ul{
     display: flex;
     align-items: center;
     list-style-type: none;
-    padding: 0;
 }
 
-.menu ul li a {
+.menu ul li a{
     text-decoration: none;
     font-weight: bold;
-    padding: 20px;
-    color: #fbe7ac;
+    padding:20px;
+    color: var(--bg-text-clr);
 }
 
-.menu ul li a:hover {
-    background-color: #fbe7ac;
+.menu ul li a:hover{
+    background-color: var(--bg-text-clr);
     color: #1a1a1a;
     border-radius: 7px;
 }
 
-
-
-
-
+/*menu déroulant */
 .menu .dropdown {
-    position: relative;
+    position: relative; 
 }
 
 .menu .submenu {
@@ -54,7 +72,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
 .menu .submenu li a {
     text-decoration: none;
     color: #fbe7ac;
@@ -89,7 +106,7 @@
     text-decoration: none;
     color: #fbe7ac;
     background-color: rgba(24, 26, 24, 0.4);
-    width: 100%;
+    width: 125%;
 }
 
 .menu .submenufilms li a:hover {
@@ -102,6 +119,9 @@
 .menu .dropdown:hover .submenufilms {
     display: block;
 }
+
+
+
 
 
 
