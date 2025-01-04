@@ -62,7 +62,7 @@ audio{
     display: none;
     position: absolute;
     background-color: rgba(24, 26, 24, 0.4);
-    padding: 5px 0;
+    padding: 0px 0;
     margin: 20px 0;
 
 }
@@ -91,7 +91,7 @@ audio{
 .menu .submenufilms {
     display: none;
     position: absolute;
-    padding: 5px 0;
+    padding: 0px 0;
     margin: 20px 0;
 }
 
@@ -187,6 +187,12 @@ main {
     border-radius: 40px;
 }
 
+.label {
+    margin-left: 5%;
+    color:rgb(245, 188, 32);
+    font-size: 1.5em;
+}
+
 .formulaire #envoi {
     transition: 2.5s ease;
     background-color: none;
@@ -220,12 +226,30 @@ main {
         padding: 0%;
     }
 
+    .menu .submenufilms {
+        display: none;
+        position: absolute;
+        padding: 0px 0;
+        margin: 20px 0;
+    }
+    
+    
+    .menu .submenufilms li a {
+        text-decoration: none;
+        color: #fbe7ac;
+        background-color: rgba(24, 26, 24, 0.4);
+        width: 127%;
+    }
+    
+
+
+
     .menu .submenu {
         display: none;
         position: absolute;
         background-color: rgba(24, 26, 24, 0.4);
-        padding: 5px 0;
-        margin: 13.49px 0;
+        padding: 0px 0;
+        margin: 20px 0;
     }
 
     .menu ul {
