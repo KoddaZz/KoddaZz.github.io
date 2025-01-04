@@ -132,26 +132,40 @@ main {
     
 }
 
-#texte {    
-    transition: 2s ease;
-    backdrop-filter: blur(0);
-    background: transparent;
-    border: 2px solid rgba(255, 254, 254, 0.2);
+#texte {   
+    font-size: large;
+    backdrop-filter: blur(8px);
+    background: rgba(23, 220, 255, 0.419);
+    border: 2px solid rgba(1, 215, 253, 0.77);
     border-radius: 1em;
     display : flex;
     align-items: center;
     padding:30px;
+    margin: 30px;
 }
-#texte:hover{
-    transition: 2s;
-    backdrop-filter: blur(8px);
-}
+
 .video {
     width: 100%;
     margin-left: 200px;
     padding: 30px;
+    border: 2px solid rgba(1, 215, 253, 0.77);
+    border-radius: 1em;
+    
 }
 
 .video iframe {
     aspect-ratio: 16/9;
+}
+
+.video::before {
+    content: "DUNE PARTIE 1 BANDE ANNONCE";
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #e5ff00;
+    border: 2px solid rgba(1, 215, 253, 0.77);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(8px);
 }
