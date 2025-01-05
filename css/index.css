@@ -1597,4 +1597,139 @@ section{
         background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
         z-index: 1;
     }
+    /* Section 1*/
+    #elementsSection1 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection1 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection1 a img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section 2*/
+    #elementsSection2 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection2 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection2 a img:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Section 3*/
+    #elementsSection3 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection3 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    /* Section 4*/
+    #elementsSection4 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection4 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection4 a img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section 5*/
+    #elementsSection5 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection5 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection5 a img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section 6*/
+    #elementsSection6 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection6 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection6 a img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section 7*/
+    #elementsSection7 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection7 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection7 a img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section 8*/
+    #elementsSection8 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection8 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection8 a img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section 9*/
+    #elementsSection9 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection9 a img {
+        transform: scale(1.105); 
+        transform-origin: center; 
+    }
+
+    #elementsSection9 a img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section 10*/
+    #elementsSection10 p {
+        font-size: 1.65em;
+    }
+
+    #elementsSection10 a img {
+        transform: scale(1.105);
+        transform-origin: center; 
+    }
+
+    #elementsSection10 a img:hover {
+        transform: scale(1.05);
+    }
 }
