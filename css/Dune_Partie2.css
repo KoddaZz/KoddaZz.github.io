@@ -169,3 +169,113 @@ main {
     background: transparent;
     backdrop-filter: blur(8px);
 }
+
+@media (max-width: 768px) {
+
+    .menu {
+        padding: 0%;
+    }
+    .menu .submenufilms {
+        display: none;
+        position: absolute;
+        padding: 0px 0;
+        margin: 20px 0;
+    }
+    .menu .submenufilms li a {
+        text-decoration: none;
+        color: #fbe7ac;
+        background-color: rgba(24, 26, 24, 0.4);
+        width: 127%;
+    }
+    .menu .submenu {
+        display: none;
+        position: absolute;
+        background-color: rgba(24, 26, 24, 0.4);
+        padding: 0px 0;
+        margin: 20px 0;
+    }
+    .menu ul {
+        font-size: 13px;
+    }
+    #navtext {
+        font-size: 10px;
+    }
+    .menu ul li a {
+        padding: 10px;
+        font-size: 1rem; 
+    }
+    .video {
+        width: 50%;
+        margin-left: 25px;
+        padding: 30px;
+        border: 2px solid rgba(1, 215, 253, 0.77);
+        border-radius: 1em;   
+        justify-content: center;
+        align-items: center;
+    }
+    .cadre {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #texte {   
+        font-size: large;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        border: 2px solid rgba(255, 255, 255, 0.2); 
+        border-radius: 1em;
+        display : flex;
+        align-items: center;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+
+
+    .video iframe {
+        aspect-ratio: 16/9;
+    }
+
+    .video::before {
+        content: "DUNE PARTIE 1 BANDE ANNONCE";
+        display:flex;
+        justify-content: center;
+        padding: 5px;
+        text-decoration: none;
+        color: #e5ff00;
+        border: none;
+        border-radius: none;
+        background: transparent;
+        backdrop-filter: blur(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .menu ul li a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    .video::before {
+        content: "DUNE PARTIE 2 BANDE ANNONCE";
+        display:flex;
+        justify-content: center;
+        padding: 5px;
+        text-decoration: none;
+        color: #e5ff00;
+        border: none;
+        border-radius: none;
+        background: transparent;
+        backdrop-filter: blur(0);
+    }
+    .video {
+        width: 50%;
+        margin-left: 25px;
+        padding: 30px;
+        border: 2px solid rgba(253, 148, 1, 0.77);
+        border-radius: 1em;   
+        justify-content: center;
+        align-items: center;
+    }
+}
