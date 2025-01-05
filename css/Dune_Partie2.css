@@ -134,9 +134,9 @@ main {
 
 #texte {   
     font-size: large;
+    background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
-    background: rgba(255, 196, 0, 0.419);
-    border: 2px solid rgba(253, 148, 1, 0.77);
+    border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 1em;
     display : flex;
     align-items: center;
