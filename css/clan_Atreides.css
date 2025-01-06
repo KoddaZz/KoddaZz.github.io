@@ -105,9 +105,10 @@
 /*Fin Nav Films*/
 
 body {
+    min-height: 99vh;
     background-image: url(media/banniere_atreides.png);
     background-size: cover;
-
+    margin: 0;
 }
 
 main{
