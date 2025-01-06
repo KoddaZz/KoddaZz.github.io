@@ -131,6 +131,7 @@ main{
     border-radius: 1em;
     padding: 10px;
     margin: 5px;
+    line-height: 25px;
 }
 p {
     text-align:center ;
