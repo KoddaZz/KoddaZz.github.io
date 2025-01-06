@@ -171,47 +171,7 @@ section{
 }
 
 
-#adaptationTitle {
-    background-image: url("https://medias.pourlascience.fr/api/v1/images/view/5ef5e39c3e45465b867c2035/wide_1300/image.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-}
-#adaptationTitle h1 {
-    text-align: center;
-    color: #fbe7ac;
-    font-family: Montserrat;
-    font-size: 5vw;
-    z-index: 2;
-}
 
-#adaptationTitle::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 1;
-}
-
-
-#adaptationTitle::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 1;
-}
 
 /* Première section */
 #section1 {
