@@ -239,6 +239,7 @@ main {
         color: #fbe7ac;
         background-color: rgba(24, 26, 24, 0.4);
         width: 127%;
+        font-size: 10px;
     }
     
 
@@ -253,7 +254,7 @@ main {
     }
 
     .menu ul {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     #navtext {
