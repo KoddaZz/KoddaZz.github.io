@@ -134,11 +134,11 @@ main {
     padding-top: 60px;
 }
 
-.cadre {
+.textevideo {
     display : flex;
     flex-direction: row;
-    
 }
+
 
 #texte {   
     font-size: large;
@@ -150,41 +150,22 @@ main {
     align-items: center;
     padding:30px;
     margin: 30px;
-    text-align: justify;
 }
 
 .video {
+    width: 80%;
+    padding: 50px;
+    margin-left:80px;
     transition: 1s ease;
-    width: 100%;
-    margin-left: 200px;
-    padding: 30px;
-    border: 2px solid rgba(253, 148, 1, 0.77);
-    border-radius: 1em;
     
 }
+
 .video:hover {
     transition: 1s ease;
     transform: scale(1.1); 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
 }
 
 
-.video iframe {
-    aspect-ratio: 16/9;
-}
-
-.video::before {
-    content: "DUNE PARTIE 2 BANDE ANNONCE";
-    display:flex;
-    justify-content: center;
-    padding: 5px;
-    text-decoration: none;
-    color: #e5ff00;
-    border: 2px solid rgba(253, 148, 1, 0.77);
-    border-radius: 1em;
-    background: transparent;
-    backdrop-filter: blur(8px);
-}
 
 @media (max-width: 768px) {
 
@@ -244,25 +225,6 @@ main {
         text-align: justify;
     }
 
-
-
-    .video iframe {
-        aspect-ratio: 16/9;
-    }
-    
-    .video::before {
-        content: none;
-        display:flex;
-        justify-content: center;
-        padding: 5px;
-        text-decoration: none;
-        color: #e5ff00;
-        border: none;
-        border-radius: none;
-        background: transparent;
-        backdrop-filter: blur(0);
-    }
-        
 }
 
 @media (max-width: 480px) {
@@ -278,20 +240,7 @@ main {
         backdrop-filter: blur(5px);
         border-radius: 0.5em;
     }
-    
-    .video::before {
-        content: none;
-        display:flex;
-        justify-content: center;
-        padding: 5px;
-        text-decoration: none;
-        color: #e5ff00;
-        border: none;
-        border-radius: none;
-        background: transparent;
-        backdrop-filter: blur(0);
-    }
-        
+      
     .video {
         width: 75%;
         margin: 10px;
