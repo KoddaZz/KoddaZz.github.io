@@ -283,6 +283,7 @@ main {
         flex-direction: column; 
         padding: 0 15px;
     }
+    /*NAV BAR MOBILE MODIFIÉE*/
 }
 
 @media (max-width: 480px) {
