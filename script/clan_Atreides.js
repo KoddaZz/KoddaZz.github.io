@@ -2,7 +2,7 @@
 const personnages = [
     {
         nom: "Paul (Muad’dib) Atréides",
-        image: "../css/media/paul_atreides.jpeg",
+        image: "../css/media/personnages/paul_atreides.webp",
         appartenance: "Clan Atréides, Fremen",
         parents: "Leto Atréides, Jessica Harkonnen",
         acteurs: "Kyle MacLachlan (1984), Timothée Chalamet (2021)",
@@ -13,7 +13,7 @@ const personnages = [
     
     {
         nom: "Leto Atréides",
-        image: "../css/media/leto_atreides.jpg",
+        image: "../css/media/personnages/leto_atreides.webp",
         appartenance: "Clan Atréides",
         parents: "Inconnus",
         acteurs: "Jürgen Prochnow (1984), Oscar Isaac (2021)",
@@ -23,7 +23,7 @@ const personnages = [
     },
     {
         nom: "Lady Jessica",
-        image: "../css/media/jessica_harkonnen.jpg",
+        image: "../css/media/personnages/jessica_harkonnen.webp",
         appartenance: "Soeur Bene Gesserit, Clan Atréides",
         parents: "Baron Harkonnen (secret)",
         acteurs: "Francesca Annis (1984), Rebecca Ferguson (2021)",
@@ -33,7 +33,7 @@ const personnages = [
     },
     {
         nom: "Duncan Idaho",
-        image: "../css/media/duncan_idaho.jpg",
+        image: "../css/media/personnages/duncan_idaho.webp",
         appartenance: "Clan Atréides",
         parents: "Inconnus",
         acteurs: "Richard Jordan (1984), Jason Momoa (2021)",
@@ -43,7 +43,7 @@ const personnages = [
     },
     {
         nom: "Gurney Halleck",
-        image: "../css/media/gurney_halleck.webp",
+        image: "../css/media/personnages/gurney_halleck.webp",
         appartenance: "Clan Atréides",
         parents: "Inconnus",
         acteurs: "Patrick Stewart (1984), Josh Brolin (2021)",

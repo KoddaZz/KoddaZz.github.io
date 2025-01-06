@@ -106,7 +106,7 @@
 
 body {
     min-height: 99vh;
-    background-image: url(media/banniere_atreides.png);
+    background-image: url(media/banniere/banniere_atreides.webp);
     background-size: cover;
 }
 

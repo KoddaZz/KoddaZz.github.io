@@ -1,7 +1,7 @@
 const personnages = [
     {
         nom: "Stilgar",
-        image: "./stilgar.jpg",
+        image: "../css/media/personnages/stilgar.webp",
         appartenance: "Fremen",
         parents: "Inconnus",
         acteurs: "Everett McGill (1984), Javier Bardem (2021)",
@@ -11,7 +11,7 @@ const personnages = [
     },
     {
         nom: "Chani",
-        image: "./chani.jpg",
+        image: "../css/media/personnages/chani.webp",
         appartenance: "Fremen",
         parents: "Liet Kynes, Inara",
         acteurs: "Sean Young (1984), Zendaya (2021)",
@@ -21,7 +21,7 @@ const personnages = [
     },
     {
         nom: "Jamis",
-        image: "./jamis.jpg",
+        image: "../css/media/personnages/jamis.webp",
         appartenance: "Fremen",
         parents: "Inconnus",
         acteurs: "Judith Anderson (1984), Babs Olusanmokun (2021)",

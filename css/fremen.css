@@ -72,7 +72,7 @@
 
 body {
     min-height: 99vh;
-    background-image: url(media/banniere_fremen.jpg);
+    background-image: url(media/banniere/banniere_fremen.webp);
     background-size: cover;
 }
 

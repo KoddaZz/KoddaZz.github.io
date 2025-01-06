@@ -1,7 +1,7 @@
 const personnages = [
     {
         nom: "Révérende Mère Gaius Helen",
-        image: "../css/media/reverende_mere.jpg",
+        image: "../css/media/personnages/reverende_mere.webp",
         appartenance: "Sœurs Bene Gesserit",
         parents: "Inconnus",
         acteurs: "Siân Phillips (1984), Charlotte Rampling (2021)",
@@ -11,7 +11,7 @@ const personnages = [
     },
     {
         nom: "Lady jessica",
-        image: "../css/media/jessica_harkonnen.jpg",
+        image: "../css/media/personnages/jessica_harkonnen.webp",
         appartenance: "Sœurs Bene Gesserit, Clan Atréides",
         parents: "Baron Vladimir Harkonnen (secret)",
         acteurs: "Francesca Annis (1984), Rebecca Ferguson (2021)",
@@ -22,7 +22,7 @@ const personnages = [
 
     {
         nom: "Princesse Irulan",
-        image: "../css/media/princesse_irulan.png",
+        image: "../css/media/personnages/princesse_irulan.webp",
         appartenance: "Sœurs Bene Gesserit, Maison Corrino",
         parents: "Shaddam IV, Anirul Corrino",
         acteurs: "Virginia Madsen (1984), Florence Pugh (2023)",
