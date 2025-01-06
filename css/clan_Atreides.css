@@ -213,13 +213,48 @@ main{
     margin: 5px;
 }
 
-@media (max-width: 1000px) {
-    .main{
-        font-size: 200%;
+
+@media (max-width: 768px) {
+    .haut_cadre img {
+        width: 300px;
     }
-    .haut_cadre{
-        width: 200px;
-        height: 80px;
+    .menu {
+        padding: 0%;
+    }
+    .menu .submenufilms {
+        display: none;
+        position: absolute;
+        padding: 0px 0;
+        margin: 20px 0;
+    }
+    .menu .submenufilms li a {
+        text-decoration: none;
+        color: #fbe7ac;
+        background-color: rgba(24, 26, 24, 0.4);
+        width: 127%;
+    }
+    .menu .submenu {
+        display: none;
+        position: absolute;
+        background-color: rgba(24, 26, 24, 0.4);
+        padding: 0px 0;
+        margin: 20px 0;
+    }
+    .menu ul {
+        font-size: 13px;
+    }
+    #navtext {
+        font-size: 10px;
+    }
+    .menu ul li a {
+        padding: 10px;
+        font-size: 1rem; 
     }
 }
 
+@media (max-width: 768px) {
+    main {
+        width: 90%; 
+        font-size: 150%; 
+        padding: 20px; }
+}
