@@ -38,6 +38,14 @@
 
 
 
+h1 {
+    font-size: 2em;
+    color: #fbe7ac;
+    margin-bottom: 7%;
+    background-color: rgba(24, 26, 24, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 0.5em;
+}
 
 
 
@@ -257,6 +265,11 @@ main {
     }
     h1 {
         font-size: 1.4em;
+        color: #fbe7ac;
+        margin-bottom: 1%;
+        background-color: rgba(24, 26, 24, 0.05);
+        backdrop-filter: blur(5px);
+        border-radius: 0.5em;
     }
     
     .video::before {
