@@ -206,8 +206,7 @@ main {
         font-size: 1rem; 
     }
     .video {
-        width: 50%;
-        margin-left: 25px;
+        width: 75%;
         padding: 30px;
         border: 2px solid rgba(1, 215, 253, 0.77);
         border-radius: 1em;   
@@ -227,10 +226,7 @@ main {
         backdrop-filter: blur(8px);
         border: 2px solid rgba(255, 255, 255, 0.2); 
         border-radius: 1em;
-        display : flex;
-        align-items: center;
-        margin-left: 75px;
-        margin-right: 75px;
+        text-align: justify;
     }
 
 
@@ -238,9 +234,9 @@ main {
     .video iframe {
         aspect-ratio: 16/9;
     }
-
+    
     .video::before {
-        content: "DUNE PARTIE 1 BANDE ANNONCE";
+        content: none;
         display:flex;
         justify-content: center;
         padding: 5px;
@@ -251,6 +247,7 @@ main {
         background: transparent;
         backdrop-filter: blur(0);
     }
+        
 }
 
 @media (max-width: 480px) {
@@ -258,8 +255,12 @@ main {
         padding: 8px;
         font-size: 0.9rem;
     }
+    h1 {
+        font-size: 1.4em;
+    }
+    
     .video::before {
-        content: "DUNE PARTIE 2 BANDE ANNONCE";
+        content: none;
         display:flex;
         justify-content: center;
         padding: 5px;
@@ -270,11 +271,12 @@ main {
         background: transparent;
         backdrop-filter: blur(0);
     }
+        
     .video {
-        width: 50%;
-        margin-left: 25px;
+        width: 75%;
+        margin: 10px;
         padding: 30px;
-        border: 2px solid rgba(253, 148, 1, 0.77);
+        border: none;
         border-radius: 1em;   
         justify-content: center;
         align-items: center;
