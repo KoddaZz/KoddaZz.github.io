@@ -284,6 +284,37 @@ main {
         padding: 0 15px;
     }
     /*NAV BAR MOBILE MODIFIÉE*/
+
+    .menu .submenufilms li a:focus {
+        background-color: #fbe7ac;
+        color: #1a1a1a;
+        border-radius: 5px;
+    }
+
+
+    .menu .dropdown:focus .submenufilms {
+        display: block;
+    }
+
+
+    .menu .submenu li a:focus {
+        background-color: #fbe7ac;
+        color: #1a1a1a;
+        border-radius: 5px;
+    }
+    
+
+    .menu .dropdown:focus .submenu {
+        display: block;
+    }
+
+    .menu ul li a:focus{
+        background-color: var(--bg-text-clr);
+        color: #1a1a1a;
+        border-radius: 7px;
+        }
+
+    
 }
 
 @media (max-width: 480px) {
