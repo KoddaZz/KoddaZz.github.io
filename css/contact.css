@@ -283,26 +283,7 @@ main {
         flex-direction: column; 
         padding: 0 15px;
     }
-    /*NAV BAR MOBILE MODIFIÉE*/*
-    .menu ul li a:hover{
-    background-color: var(--bg-text-clr);
-    color: #1a1a1a;
-    border-radius: 7px;
-    }
-    .menu .submenu li a:hover {
-        background-color: #fbe7ac;
-        color: #1a1a1a;
-        border-radius: 5px;
-    }
-    
-    .menu .dropdown:hover .submenu {
-        display: block;
-    }
-    .formulaire:hover {
-        transition: 2s;
-        backdrop-filter: blur(8px);
-    }
-
+    /*NAV BAR MOBILE MODIFIÉE*/
 }
 
 @media (max-width: 480px) {
