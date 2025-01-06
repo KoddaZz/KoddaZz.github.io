@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 body{
-    cursor: url('media/bucket_kfc_curseur.png'), auto;
+    cursor: url('./media/bucket_kfc_curseur.png'), auto;
     font-family: poppins;
 }
 audio{
@@ -126,7 +126,6 @@ audio{
 body{
     width: 100%;
     min-height: 100dvh;
-    background-color: #1a1a1a;
 }
 
 /* affichage à la verticale avec flex */
@@ -177,9 +176,8 @@ section{
     height: 100%;                
     object-fit: cover;           
     z-index: -1;                 
-    
 }
-  
+
 #hero::before {
     content: '';
     position: absolute;
@@ -192,7 +190,7 @@ section{
 }
 
 #adaptationTitle {
-    background-image: url("media/index/img_adaptations.webp");
+    background-image: url("media/index/img_adaptations.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -233,7 +231,7 @@ section{
 
 /* Première section */
 #section1 {
-    background-image: url(media/index/img_fond_section1.webp);
+    background-image: url(media/index/img_fond_section1.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -249,7 +247,7 @@ section{
 }
 
 
-#section1 h2 {
+#section1 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -362,7 +360,7 @@ section{
 
 /* Section 2 */
 #section2 {
-    background-image: url(media/index/img_fond_section2.webp);
+    background-image: url(media/index/img_fond_section2.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -378,7 +376,7 @@ section{
 }
 
 
-#section2 h2 {
+#section2 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -494,7 +492,7 @@ section{
 
 /* Section 3 */
 #section3 {
-    background-image: url(media/index/img_fond_section3.webp);
+    background-image: url(media/index/img_fond_section3.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -510,7 +508,7 @@ section{
 }
 
 
-#section3 h2 {
+#section3 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -622,7 +620,7 @@ section{
 
 /* SECTION 4 */
 #section4 {
-    background-image: url(media/index/img_fond_section4.webp);
+    background-image: url(media/index/img_fond_section4.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -638,7 +636,7 @@ section{
 }
 
 
-#section4 h2 {
+#section4 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -751,7 +749,7 @@ section{
 /* SECTION 5 */
 
 #section5 {
-    background-image: url(media/index/img_fond_section5.webp);
+    background-image: url(media/index/img_fond_section5.png);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -767,7 +765,7 @@ section{
 }
 
 
-#section5 h2 {
+#section5 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -880,7 +878,7 @@ section{
 /* SECTION  6*/
 
 #section6 {
-    background-image: url(media/index/img_fond_section6.webp);
+    background-image: url(media/index/img_fond_section6.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -896,7 +894,7 @@ section{
 }
 
 
-#section6 h2 {
+#section6 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1009,7 +1007,7 @@ section{
 /*  SECTION 7 */
 
 #section7 {
-    background-image: url(media/index/img_fond_section7.webp);
+    background-image: url(media/index/img_fond_section7.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -1025,7 +1023,7 @@ section{
 }
 
 
-#section7 h2 {
+#section7 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1138,7 +1136,7 @@ section{
 /* SECTION 8 */
 
 #section8 {
-    background-image: url(media/index/img_fond_section8.webp);
+    background-image: url(media/index/img_fond_section8.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -1154,7 +1152,7 @@ section{
 }
 
 
-#section8 h2 {
+#section8 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1267,7 +1265,7 @@ section{
 /* SECTION 9 */
 
 #section9 {
-    background-image: url(media/index/img_fond_section9.webp);
+    background-image: url(media/index/img_fond_section9.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -1283,7 +1281,7 @@ section{
 }
 
 
-#section9 h2 {
+#section9 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1396,7 +1394,7 @@ section{
 /* SECTION 10 */
 
 #section10 {
-    background-image: url(media/index/img_fond_section10.webp);
+    background-image: url(media/index/img_fond_section10.jpg);
     background-size: cover;
     background-position: center;
     position: relative; /* Nécessaire -> before */
@@ -1412,7 +1410,7 @@ section{
 }
 
 
-#section10 h2 {
+#section10 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1559,7 +1557,7 @@ section{
 .basPage {
     position: relative;
     height: 25vh;
-    background-image: url(media/index/img_bas_de_page.webp);
+    background-image: url(media/img_bas_de_page.jpg);
 
     background-size: cover;
     background-position: center;

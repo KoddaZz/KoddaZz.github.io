@@ -113,7 +113,6 @@ body {
 
 main{
     font-size: 125%;
-    background: rgba(217, 217, 217, 0.25);
     border-radius: 1em;
     width: 40%;
     position: absolute;
@@ -123,6 +122,17 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.ensemble{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cadre{
+    background: rgba(217, 217, 217, 0.25);
 }
 .haut_cadre{
     display: flex;
