@@ -26,7 +26,7 @@ audio{
     left: 0;
     display: flex;
     width: 100%;
-    padding: 0 10px;
+    padding: 0px 10px;
     border-radius: 10px;
     justify-content: center;
     background-color: rgba(13, 29, 13, 0.4);
@@ -62,7 +62,7 @@ audio{
     display: none;
     position: absolute;
     background-color: rgba(24, 26, 24, 0.4);
-    padding: 0 0;
+    padding: 0px 0;
     margin: 20px 0;
 
 }
@@ -91,7 +91,7 @@ audio{
 .menu .submenufilms {
     display: none;
     position: absolute;
-    padding: 0 0;
+    padding: 0px 0;
     margin: 20px 0;
 }
 
@@ -168,48 +168,6 @@ section{
     z-index: 1;
 }
 
-#adaptationTitle {
-    background-image: url("https://medias.pourlascience.fr/api/v1/images/view/5ef5e39c3e45465b867c2035/wide_1300/image.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-}
-#adaptationTitle h1 {
-    text-align: center;
-    color: #fbe7ac;
-    font-family: Montserrat;
-    font-size: 5vw;
-    z-index: 2;
-}
-
-#adaptationTitle::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 1;
-}
-
-
-#adaptationTitle::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 1;
-}
-
 /* Première section */
 #section1 {
     background-image: url(media/index/img_fond_section1.jpg);
@@ -228,13 +186,12 @@ section{
 }
 
 
-#section1 h2 {
+#section1 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
-    text-shadow: #1a1a1a;
 }
 
 
@@ -358,7 +315,7 @@ section{
 }
 
 
-#section2 h2 {
+#section2 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -410,9 +367,12 @@ section{
     text-align: justify;
     color: #1a1a1a;
     font-size: 1.3em;
+    padding: 20px;
+    /*line-height: 1.6; */
     /*padding: 20px;*/
     line-height: 1.6;
     z-index: 2;
+    margin-bottom: 10px; 
     /*margin-bottom: 10px; */
 }
 
@@ -487,7 +447,7 @@ section{
 }
 
 
-#section3 h2 {
+#section3 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -615,7 +575,7 @@ section{
 }
 
 
-#section4 h2 {
+#section4 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -744,7 +704,7 @@ section{
 }
 
 
-#section5 h2 {
+#section5 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -873,7 +833,7 @@ section{
 }
 
 
-#section6 h2 {
+#section6 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1002,7 +962,7 @@ section{
 }
 
 
-#section7 h2 {
+#section7 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1131,7 +1091,7 @@ section{
 }
 
 
-#section8 h2 {
+#section8 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1260,7 +1220,7 @@ section{
 }
 
 
-#section9 h2 {
+#section9 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1389,7 +1349,7 @@ section{
 }
 
 
-#section10 h2 {
+#section10 h1 {
     text-align: center;
     color: #fbe7ac;
     z-index: 2;
@@ -1512,12 +1472,12 @@ section{
     height: 75px;
     width: 75px;
     line-height: 75px;
-    
+
     text-align: center;
     align-self: center;
     text-decoration: none;
     font-weight: bold;
-    
+
     color: #fbe7ac;
     border-radius: 50%;
     outline: none;
@@ -1537,7 +1497,7 @@ section{
     position: relative;
     height: 25vh;
     background-image: url(media/img_bas_de_page.jpg);
-    
+
     background-size: cover;
     background-position: center;
     color: #f0f0f0;
@@ -1579,7 +1539,7 @@ section{
     text-align: justify;
     margin-right: 100px;
     margin-left: 100px;
-    
+
 }
 
 .basPageGitRepoAndAuthors{
@@ -1629,7 +1589,7 @@ section{
         position: relative; /* Nécessaire pour positionner correctement le ::before */
         z-index: 0;
     }
-    
+
     #hero::before {
         content: '';
         position: absolute;
@@ -1671,7 +1631,7 @@ section{
     #elementsSection2 a img:hover {
         transform: scale(1.05);
     }
-    
+
     /* Section 3*/
     #elementsSection3 p {
         font-size: 1.65em;
