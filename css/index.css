@@ -126,6 +126,7 @@ audio{
 body{
     width: 100%;
     min-height: 100dvh;
+    background-color: #1a1a1a;
 }
 
 /* affichage à la verticale avec flex */
@@ -149,14 +150,23 @@ section{
 
 /* Hero */
 #hero {
-    background-image: url("media/index/img_fond_principal_dune.webp");
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Hauteur de la section égale à la fenêtre */
-    position: relative; /* Nécessaire pour positionner correctement le ::before */
-    z-index: 0;
-}
-
+    position: relative;          /* Positionnement pour le conteneur */
+    width: 100%;                 /* Prend toute la largeur de l'écran */
+    height: 100vh;               /* Hauteur de l'écran */
+    overflow: hidden;            /* Cache tout débordement de l'image */
+  }
+  
+  #hero img {
+    position: absolute;          /* Positionne l'image à l'intérieur */
+    top: 50%;                    /* Centre verticalement */
+    left: 50%;                   /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste le centre exact */
+    width: 100%;                 /* L'image remplit toute la largeur */
+    height: 100%;                /* L'image remplit toute la hauteur */
+    object-fit: cover;           /* Ajuste l'image pour agir comme un background */
+    z-index: -1;                 /* Place l'image derrière tout autre contenu */
+  }
+  
 #hero::before {
     content: '';
     position: absolute;
@@ -1628,6 +1638,10 @@ section{
         height: 100vh; /* Hauteur de la section égale à la fenêtre */
         position: relative; /* Nécessaire pour positionner correctement le ::before */
         z-index: 0;
+    }
+
+    #hero img {
+        display: none;
     }
 
     #hero::before {
