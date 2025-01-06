@@ -156,7 +156,7 @@ section{
     overflow: hidden;            /* Cache tout débordement de l'image */
   }
   
-  #hero img {
+  #ImagePC {
     position: absolute;          /* Positionne l'image à l'intérieur */
     top: 50%;                    /* Centre verticalement */
     left: 50%;                   /* Centre horizontalement */
@@ -166,6 +166,19 @@ section{
     object-fit: cover;           /* Ajuste l'image pour agir comme un background */
     z-index: -1;                 /* Place l'image derrière tout autre contenu */
   }
+
+#ImagePhone {
+    display: none;
+    position: absolute;          /* Positionne l'image à l'intérieur */
+    top: 50%;                    /* Centre verticalement */
+    left: 50%;                   /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste le centre exact */
+    width: 100%;                 /* L'image remplit toute la largeur */
+    height: 100%;                /* L'image remplit toute la hauteur */
+    object-fit: cover;           /* Ajuste l'image pour agir comme un background */
+    z-index: -1;                 /* Place l'image derrière tout autre contenu */
+    
+}
   
 #hero::before {
     content: '';
@@ -1631,17 +1644,8 @@ section{
 }
 
 @media (max-width: 980px) {
-    #hero {
-        background-image: url("media/index/tel_img_fond_principal.webp");
-        background-size: cover;
-        background-position: center;
-        height: 100vh; /* Hauteur de la section égale à la fenêtre */
-        position: relative; /* Nécessaire pour positionner correctement le ::before */
-        z-index: 0;
-    }
-
-    #hero img {
-        display: none;
+    #ImagePhone {
+        display: block;
     }
 
     #hero::before {
