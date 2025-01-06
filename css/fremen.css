@@ -1,0 +1,179 @@
+.menu {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
+    z-index: 3;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    color: #fbe7ac;
+}
+
+.menu ul li a:hover{
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 7px;
+}
+
+/*menu déroulant */
+.menu .dropdown {
+    position: relative; 
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color:  rgba(24, 26, 24, 0.4);
+    padding: 5px 0;
+    margin: 20px 0;
+
+}
+
+.menu .submenu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.menu .submenu li a {
+    text-decoration: none;
+    color: #fbe7ac;
+}
+
+.menu .submenu li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+
+body {
+    background-image: url(media/banniere_fremen.jpg);
+    background-size: cover;
+}
+
+main{
+    font-size: 125%;
+    background: rgba(217, 217, 217, 0.25);
+    border-radius: 1em;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.haut_cadre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+
+}
+.haut_cadre img {
+    width: 120px;
+}
+#titre{
+    border: 2px solid rgba(24, 26, 24, 0.6);
+    background-color: #fbe7ac;
+    border-radius: 1em;
+    padding: 10px;
+    margin: 5px;
+}
+
+#Appartenance {
+
+    border: 2px solid rgba(24, 26, 24, 0.6);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+#Parents {
+
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+#Acteurs {
+
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+#lieu{ 
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+#date{
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+#texte{
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.5);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.milieu_cadre{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+}
+.bas_cadre{ 
+    display:flex;
+    align-items: center;
+}
+.bouton_cadre{
+    display:flex;
+    justify-content: space-around;
+}
+.style-bouton{
+    border: 2px solid rgba(24, 26, 24, 0.4);
+    background-color: rgba(217, 217, 217,0.9);
+    border-radius: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
