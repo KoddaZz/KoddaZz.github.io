@@ -1590,12 +1590,12 @@ section{
 
 .basPage {
     position: relative;
-    height: 25vh;
-    background-image: url(media/index/img_bas_de_page.webp);
+    height: 17.5vh;
+    background-color: #1f1e1e;
 
     background-size: cover;
     background-position: center;
-    color: #f0f0f0;
+    color: #fbe7ac;
     z-index: 1;
 }
 
@@ -1603,7 +1603,7 @@ section{
     display: flex;
     align-items: center;
     position: relative;
-    height: 25vh;
+    height: 17.5vh;
     backdrop-filter: blur(3.5px);
     z-index: 2;
 }
@@ -1635,6 +1635,8 @@ section{
     margin-right: 100px;
     margin-left: 100px;
 
+    margin-top: 40px;
+
 }
 
 .basPageGitRepoAndAuthors{
@@ -1644,8 +1646,17 @@ section{
 }
 
 .basPageGitRepoAndAuthors a img {
-    margin-right: 10px;
+    margin: 25px;
+    margin-top: 60px;
 }
+
+.basPageGitRepoAndAuthors a img:hover {
+
+    transform: scale(1.105);
+    transform-origin: center; 
+
+}
+
 
 .basPageAuteurs{
     display: flex;
@@ -1656,6 +1667,8 @@ section{
     padding-bottom: 20px;
     border-radius: 1em;
     z-index: 3;
+
+    margin-top: 40px;
 }
 
 .basPageAuteurs h3{
