@@ -26,7 +26,7 @@ audio{
     left: 0;
     display: flex;
     width: 100%;
-    padding: 0px 10px;
+    padding: 0 10px;
     border-radius: 10px;
     justify-content: center;
     background-color: rgba(13, 29, 13, 0.4);
@@ -62,7 +62,7 @@ audio{
     display: none;
     position: absolute;
     background-color: rgba(24, 26, 24, 0.4);
-    padding: 0px 0;
+    padding: 0 0;
     margin: 20px 0;
 
 }
@@ -91,7 +91,7 @@ audio{
 .menu .submenufilms {
     display: none;
     position: absolute;
-    padding: 0px 0;
+    padding: 0 0;
     margin: 20px 0;
 }
 
