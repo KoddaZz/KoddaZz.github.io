@@ -150,33 +150,33 @@ section{
 
 /* Hero */
 #hero {
-    position: relative;          /* Positionnement pour le conteneur */
-    width: 100%;                 /* Prend toute la largeur de l'écran */
-    height: 100vh;               /* Hauteur de l'écran */
-    overflow: hidden;            /* Cache tout débordement de l'image */
+    position: relative;      
+    width: 100%;                 
+    height: 100vh;               
+    overflow: hidden;            
   }
   
   #ImagePC {
-    position: absolute;          /* Positionne l'image à l'intérieur */
-    top: 50%;                    /* Centre verticalement */
-    left: 50%;                   /* Centre horizontalement */
-    transform: translate(-50%, -50%); /* Ajuste le centre exact */
-    width: 100%;                 /* L'image remplit toute la largeur */
-    height: 100%;                /* L'image remplit toute la hauteur */
-    object-fit: cover;           /* Ajuste l'image pour agir comme un background */
-    z-index: -1;                 /* Place l'image derrière tout autre contenu */
+    position: absolute;          
+    top: 50%;                    
+    left: 50%;                   
+    transform: translate(-50%, -50%); 
+    width: 100%;                 
+    height: 100%;                
+    object-fit: cover;           
+    z-index: -1;                 
   }
 
 #ImagePhone {
     display: none;
-    position: absolute;          /* Positionne l'image à l'intérieur */
-    top: 50%;                    /* Centre verticalement */
-    left: 50%;                   /* Centre horizontalement */
-    transform: translate(-50%, -50%); /* Ajuste le centre exact */
-    width: 100%;                 /* L'image remplit toute la largeur */
-    height: 100%;                /* L'image remplit toute la hauteur */
-    object-fit: cover;           /* Ajuste l'image pour agir comme un background */
-    z-index: -1;                 /* Place l'image derrière tout autre contenu */
+    position: absolute;          
+    top: 50%;                    
+    left: 50%;                   
+    transform: translate(-50%, -50%); 
+    width: 100%;                
+    height: 100%;                
+    object-fit: cover;           
+    z-index: -1;                 
     
 }
   
@@ -1646,6 +1646,10 @@ section{
 @media (max-width: 980px) {
     #ImagePhone {
         display: block;
+    }
+
+    #ImagePC {
+        display: none;
     }
 
     #hero::before {
