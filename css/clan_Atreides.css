@@ -213,5 +213,13 @@ main{
     margin: 5px;
 }
 
-
+@media (max-width: 1000px) {
+    .main{
+        font-size: 200%;
+    }
+    .haut_cadre{
+        width: 200px;
+        height: 80px;
+    }
+}
 
