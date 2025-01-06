@@ -1640,6 +1640,10 @@ section{
         z-index: 0;
     }
 
+    #hero img {
+        display: none;
+    }
+
     #hero::before {
         content: '';
         position: absolute;
