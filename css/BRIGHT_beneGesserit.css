@@ -129,7 +129,7 @@ main{
 }
 
 .cadre{
-    background: rgba(217, 217, 217, 0.25);
+    background: rgba(238, 233, 171, 0.25);
     border-radius: 1em;
 }
 .haut_cadre{
@@ -155,7 +155,7 @@ main{
 #Appartenance {
 
     border: 2px solid rgba(24, 26, 24, 0.6);
-    background-color: rgba(217, 217, 217,0.5);
+    background-color: rgba(238, 233, 171,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
@@ -164,7 +164,7 @@ main{
 #Parents {
 
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(217, 217, 217,0.5);
+    background-color: rgba(238, 233, 171,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
@@ -173,28 +173,28 @@ main{
 #Acteurs {
 
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(217, 217, 217,0.5);
+    background-color: rgba(238, 233, 171,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
 }
 #lieu{ 
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(217, 217, 217,0.5);
+    background-color: rgba(238, 233, 171,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
 }
 #date{
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(217, 217, 217,0.5);
+    background-color: rgba(238, 233, 171,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
 }
 #texte{
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(217, 217, 217,0.6);
+    background-color: rgba(238, 233, 171,0.6);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
@@ -218,7 +218,7 @@ main{
 }
 .style-bouton{
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(217, 217, 217,0.9);
+    background-color: rgba(238, 233, 171,0.9);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
