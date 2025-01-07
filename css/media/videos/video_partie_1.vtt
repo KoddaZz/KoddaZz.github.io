@@ -1,0 +1,204 @@
+WEBVTT
+
+STYLE
+::cue {
+    background: rgba(#000, 0.56);
+    text-shadow: #000 0 0 7px;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+}
+::cue(v[voice="Speaker1"]) { color: #fff; }
+::cue(v[voice="Speaker2"]) { color: #009FDA; }
+::cue(v[voice="Speaker3"]) { color: #00DAFF; }
+::cue(v[voice="Speaker4"]) { color: #0DFF00; }
+::cue(v[voice="Speaker5"]) { color: #EEDC00; }
+::cue(v[voice="Speaker6"]) { color: #FFBA00; }
+::cue(v[voice="Speaker7"]) { color: #D60080; }
+
+1
+00:00:09.000 --> 00:00:10.708 align:center line:90% position:50%
+Il se passe quelque chose en moi.
+
+2
+00:00:12.125 --> 00:00:15.292 align:center line:90% position:50%
+Quelque chose s'éveille dans mon esprit,
+je n'ai aucun contrôle dessus.
+
+3
+00:00:16.333 --> 00:00:17.333 align:center line:90% position:50%
+Qu'est-ce que tu as vu ?
+
+4
+00:00:17.542 --> 00:00:18.375 align:center line:90% position:50%
+Paul !
+
+5
+00:00:19.958 --> 00:00:21.042 align:center line:90% position:50%
+Une croisade se prépare.
+
+6
+00:00:26.083 --> 00:00:29.000 align:center line:90% position:50%
+Tu rêves souvent de choses
+qui se réalisent telles que
+
+7
+00:00:29.083 --> 00:00:30.292 align:center line:90% position:50%
+tu les avais vues, oui.
+
+8
+00:00:35.458 --> 00:00:36.417 align:center line:90% position:50%
+L'épreuve est simple.
+
+9
+00:00:37.667 --> 00:00:39.667 align:center line:90% position:50%
+Si tu retires ta main de la boîte,
+
+10
+00:00:40.333 --> 00:00:40.958 align:center line:90% position:50%
+tu mourras.
+
+11
+00:00:41.833 --> 00:00:42.875 align:center line:90% position:50%
+Qu'est-ce qu'il y a dans la boîte.
+
+12
+00:00:43.833 --> 00:00:44.542 align:center line:90% position:50%
+La souffrance.
+
+13
+00:00:48.292 --> 00:00:50.208 align:center line:90% position:50%
+Tu as hérité une trop grande puissance,
+
+14
+00:00:50.583 --> 00:00:52.708 align:center line:90% position:50%
+tu as prouvé que ton esprit
+commandait ton corps.
+
+15
+00:00:55.167 --> 00:00:56.875 align:center line:90% position:50%
+Il faut apprendre à commander les autres,
+
+16
+00:00:57.375 --> 00:00:59.958 align:center line:90% position:50%
+une chose qu'aucun de tes ancêtres
+n'a appris.
+
+17
+00:01:01.875 --> 00:01:03.708 align:center line:90% position:50%
+Mon père gouverne toute une planète.
+
+18
+00:01:03.917 --> 00:01:04.667 align:center line:90% position:50%
+Elle lui échappe.
+
+19
+00:01:07.667 --> 00:01:09.208 align:center line:90% position:50%
+Il en aura une plus riche,
+
+20
+00:01:09.625 --> 00:01:11.333 align:center line:90% position:50%
+elle lui échappera elle aussi.
+
+21
+00:01:12.500 --> 00:01:14.417 align:center line:90% position:50%
+♪<i>Music♪</i>
+
+22
+00:01:15.250 --> 00:01:16.083 align:center line:90% position:50%
+Ah mon grand.
+
+23
+00:01:16.625 --> 00:01:18.708 align:center line:90% position:50%
+♪Music♪
+
+24
+00:01:18.833 --> 00:01:20.208 align:center line:90% position:50%
+Arrakis est un piège mortel.
+
+25
+00:01:22.625 --> 00:01:23.708 align:center line:90% position:50%
+Tuez-les 
+
+26
+00:01:24.000 --> 00:01:26.000 align:center line:90% position:50%
+♪Music♪
+
+27
+00:01:26.333 --> 00:01:27.875 align:center line:90% position:50%
+C'est une extermination en règle.
+
+28
+00:01:29.583 --> 00:01:31.583 align:center line:90% position:50%
+Ils éliminent mes proches
+les uns après les autres.
+
+29
+00:01:33.167 --> 00:01:34.458 align:center line:90% position:50%
+On va se battre comme des Lions.
+
+30
+00:01:34.958 --> 00:01:38.292 align:center line:90% position:50%
+<i>*Combat*</i>
+
+31
+00:01:38.958 --> 00:01:42.750 align:center line:90% position:50%
+Un animal prit au piège dévorera
+sa propre patte pour s'échapper.
+
+32
+00:01:43.375 --> 00:01:44.625 align:center line:90% position:50%
+Qu'est-ce que tu vas faire ?
+
+33
+00:01:45.042 --> 00:01:46.500 align:center line:90% position:50%
+Paul 
+
+34
+00:01:48.292 --> 00:01:48.917 align:center line:90% position:50%
+Je te connais.
+
+35
+00:01:51.000 --> 00:01:57.750 align:center line:90% position:50%
+<i>♪Music♪</i>
+
+36
+00:01:58.375 --> 00:01:59.208 align:center line:90% position:50%
+Un jour
+
+37
+00:02:00.333 --> 00:02:01.875 align:center line:90% position:50%
+Naitra un être de légende.
+
+38
+00:02:04.750 --> 00:02:06.875 align:center line:90% position:50%
+Toute une civilisation en dépend.
+
+39
+00:02:08.917 --> 00:02:10.708 align:center line:90% position:50%
+L'avenir, je peux le voir.
+
+40
+00:02:17.792 --> 00:02:19.000 align:center line:90% position:50%
+Je ne dois pas avoir peur.
+
+41
+00:02:24.250 --> 00:02:25.667 align:center line:90% position:50%
+La peur tue l'esprit.
+
+42
+00:02:27.458 --> 00:02:28.208 align:center line:90% position:50%
+Monseigneur.
+
+43
+00:02:29.167 --> 00:02:30.542 align:center line:90% position:50%
+Lorsque la peur sera passée.
+
+44
+00:02:32.333 --> 00:02:33.500 align:center line:90% position:50%
+Il ne restera que moi.
+
+45
+00:02:36.583 --> 00:02:37.708 align:center line:90% position:50%
+Vite, Courez, Courez !
+
