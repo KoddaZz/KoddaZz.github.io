@@ -261,6 +261,14 @@ h2 {
     background-position: center;
 }
 
+.ParagraphAndLink {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Pseudo-elements for Fade Effect */
 #section1::before, #section2::before, #section3::before, #section4::before, #section5::before, #section6::before, #section7::before, #section8::before, #section9::before, #section10::before {
     content: '';
@@ -330,27 +338,18 @@ h2 {
 
 #allerPlusLoin_Section_1, #allerPlusLoin_Section_2, #allerPlusLoin_Section_3, #allerPlusLoin_Section_4, #allerPlusLoin_Section_5, #allerPlusLoin_Section_6, #allerPlusLoin_Section_7, #allerPlusLoin_Section_8, #allerPlusLoin_Section_9, #allerPlusLoin_Section_10 {
     display: flex;
-
     justify-self: center;
-
     text-align: center;
-
-
     text-decoration: none;
-
     font-weight: bold;
-
     margin-top: 10px;
-
     padding: 20px;
-
     background-color: var(--bg-text-clr);
-
     color: #1a1a1a;
-
     border-radius: 7px;
-
     border: 1px solid transparent; 
+    width: fit-content !important;
+
 }
 
 #allerPlusLoin_Section_1:hover, #allerPlusLoin_Section_2:hover, #allerPlusLoin_Section_3:hover, #allerPlusLoin_Section_4:hover, #allerPlusLoin_Section_5:hover, #allerPlusLoin_Section_6:hover, #allerPlusLoin_Section_7:hover, #allerPlusLoin_Section_8:hover, #allerPlusLoin_Section_9:hover, #allerPlusLoin_Section_10:hover {
@@ -388,7 +387,6 @@ h2 {
 /* Footer */
 .basPage {
     position: relative;
-    height: 17.5vh;
     background-color: #1f1e1e;
     color: #fbe7ac;
 }
@@ -397,7 +395,6 @@ h2 {
     display: flex;
     align-items: center;
     position: relative;
-    height: 17.5vh;
     backdrop-filter: blur(3.5px);
 }
 
@@ -409,7 +406,7 @@ h2 {
     right: 0;
     height: 50%;
     background: linear-gradient(to bottom, rgba(0, 0, 0,  0.99), rgba(0, 0, 0, 0));
-    z-index: 1;
+    z-index: 0;
 }
 
 .blabla {
@@ -460,7 +457,13 @@ h2 {
     margin-bottom: 30px;
 }
 
+.basPageAuteursNoms {
+    display: flex;
+    flex-direction: row;
+}
+
 .basPageAuteursNoms a {
+    display: block;
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
