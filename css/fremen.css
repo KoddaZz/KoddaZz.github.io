@@ -157,6 +157,7 @@ main{
 #titre{
     border: 2px solid rgba(24, 26, 24, 0.6);
     background-color: #fbe7ac;
+    color: #1a1a1a;
     border-radius: 1em;
     padding: 10px;
     margin: 5px;
