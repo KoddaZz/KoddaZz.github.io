@@ -194,7 +194,6 @@ main {
 
 .formulaire #envoi {
     transition: 2.5s ease;
-    background-color: none;
     display: flex;
     justify-content: center;
     color: rgb(245, 188, 32);
