@@ -121,7 +121,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 99vh;
-    background-image: url(media/Dune_Partie2_Fond.jpg);
+    background-image: url(media/partie2/Dune_Partie2_Fond.jpg);
     background-size: cover;
     margin: 0;
 }
