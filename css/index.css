@@ -328,7 +328,6 @@ h2 {
 }
 /* DES BOUTONS BUG TROP SELON LES NAVIGATEURS */
 
-/*
 #allerPlusLoin_Section_1, #allerPlusLoin_Section_2, #allerPlusLoin_Section_3, #allerPlusLoin_Section_4, #allerPlusLoin_Section_5, #allerPlusLoin_Section_6, #allerPlusLoin_Section_7, #allerPlusLoin_Section_8, #allerPlusLoin_Section_9, #allerPlusLoin_Section_10 {
     display: flex;
 
@@ -353,7 +352,6 @@ h2 {
 
     border: 1px solid transparent; 
 }
-*/
 
 #allerPlusLoin_Section_1:hover, #allerPlusLoin_Section_2:hover, #allerPlusLoin_Section_3:hover, #allerPlusLoin_Section_4:hover, #allerPlusLoin_Section_5:hover, #allerPlusLoin_Section_6:hover, #allerPlusLoin_Section_7:hover, #allerPlusLoin_Section_8:hover, #allerPlusLoin_Section_9:hover, #allerPlusLoin_Section_10:hover {
     background-color: rgba(24, 26, 24, 0.4);
