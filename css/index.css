@@ -1680,6 +1680,8 @@ section{
     font-weight: bold;
     padding:20px;
     color: var(--bg-text-clr);
+
+    margin-bottom: 20px;
 }
 
 .basPageAuteursNoms a:hover{
