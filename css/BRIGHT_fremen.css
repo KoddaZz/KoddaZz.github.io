@@ -108,7 +108,7 @@ main{
 }
 .haut_cadre img {
     width: 120px;
-    border-radius: 1em;
+    height: 170px;
 }
 #titre{
     border: 2px solid rgba(238, 233, 171, 0.6);
