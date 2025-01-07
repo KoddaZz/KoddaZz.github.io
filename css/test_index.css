@@ -187,9 +187,10 @@ section {
 h2 {
     text-align: center;
     color: #fbe7ac;
-    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+    font-family: Montserrat;
     font-size: 3em;
-    margin-bottom: 20px; /* Adjusted margin for spacing */
+    margin-bottom: 7%;
     background-color: rgba(24, 26, 24, 0.05);
     backdrop-filter: blur(5px);
     border-radius: 1em;
