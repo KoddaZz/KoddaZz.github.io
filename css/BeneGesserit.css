@@ -130,6 +130,7 @@ main{
 
 .cadre{
     background: rgba(217, 217, 217, 0.25);
+    border-radius: 1em;
 }
 .haut_cadre{
     display: flex;
@@ -140,6 +141,7 @@ main{
 }
 .haut_cadre img {
     width: 120px;
+    height: 170px;
 }
 #titre{
     border: 2px solid rgba(24, 26, 24, 0.6);
