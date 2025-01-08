@@ -232,31 +232,7 @@ main{
     margin: 5px;
 }
 
-/*LES MODIFS POUR LE FOOTER */
 
-html, body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-main {
-    flex: 1; /* met le main en haut */
-    margin-bottom: 323px;
-}
-
-
-main::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: -1;
-}
 
 @media (max-width: 980px) {
     .haut_cadre img {
