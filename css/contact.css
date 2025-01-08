@@ -246,7 +246,7 @@ main::before {
     right: 0;
     height: 50%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 1;
+    z-index: 0;
 }
 
 .basPage::before {
@@ -257,7 +257,7 @@ main::before {
     right: 0;
     height: 50%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 1; 
+    z-index: 0; 
 }
 
 /* Footer */
