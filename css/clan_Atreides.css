@@ -104,20 +104,25 @@
 
 /*Fin Nav Films*/
 
-
+body {
+    min-height: 99vh ;
+    background-image: url(media/banniere/banniere_harkonnen.webp);
+    background-size: cover;
+}
 
 main{
-    margin-bottom: 450px;
-    min-height: 99vh;
-    background-image: url(media/banniere/banniere_atreides.webp);
-    background-size: cover;
-    flex: 1;
-}
-html, body{
+    font-size: 125%;
+    border-radius: 1em;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
 }
+
 
 .ensemble{
     width: 40%;
