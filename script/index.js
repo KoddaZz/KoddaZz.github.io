@@ -16,3 +16,19 @@ function retournerHaut() {
         behavior: "smooth"    // effet moins brutal
     });
 }
+
+// Sélection du bouton et du lien CSS
+const changeThemeBoutton = document.getElementById('changeTheme');
+const styleLink = document.getElementById('style-link');
+
+// Gestion de l'événement lors du clic
+changeThemeBoutton.addEventListener('click', () => {
+  // Vérification du CSS actuel
+  if (styleLink.getAttribute('href') === 'css/index.css') {
+    styleLink.setAttribute('href', 'css/BRIGHT_index.css'); // Basculer vers le thème clair
+  } else {
+    styleLink.setAttribute('href', 'css/index.css'); // Revenir au thème sombre
+  }
+});
+
+
