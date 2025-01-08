@@ -235,7 +235,7 @@ html, body {
 
 main {
     flex: 1; /* met le main en haut */
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 main::before {
