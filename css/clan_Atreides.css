@@ -104,20 +104,25 @@
 
 /*Fin Nav Films*/
 
-
+body {
+    min-height: 99vh ;
+    background-image: url(media/banniere/banniere_harkonnen.webp);
+    background-size: cover;
+}
 
 main{
-    margin-bottom: 450px;
-    min-height: 99vh;
-    background-image: url(media/banniere/banniere_atreides.webp);
-    background-size: cover;
-    flex: 1;
-}
-html, body{
+    font-size: 125%;
+    border-radius: 1em;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
 }
+
 
 .ensemble{
     width: 40%;
@@ -227,31 +232,7 @@ html, body{
     margin: 5px;
 }
 
-/*LES MODIFS POUR LE FOOTER */
 
-html, body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-main {
-    flex: 1; /* met le main en haut */
-    margin-bottom: 323px;
-}
-
-
-main::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: -1;
-}
 
 @media (max-width: 980px) {
     .haut_cadre img {
