@@ -36,7 +36,7 @@ audio {
     padding: 0 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: rgba(13, 29, 13, 0.4);
+    background-color: rgba(238, 233, 171, 0.4);
     color: var(--bg-text-clr);
     z-index: 3;
 }
@@ -51,12 +51,12 @@ audio {
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
-    color: var(--bg-text-clr);
+    color: #1a1a1a;
 }
 
 .menu ul li a:hover {
-    background-color: var(--bg-text-clr);
-    color: #1a1a1a;
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
     border-radius: 7px;
 }
 
@@ -69,7 +69,7 @@ audio {
 .menu .submenufilms {
     display: none;
     position: absolute;
-    background-color: rgba(24, 26, 24, 0.4);
+    background-color: rgba(238, 233, 171,0.5);
     padding: 0;
     margin: 20px 0;
 }
@@ -96,6 +96,27 @@ audio {
 .menu .dropdown:hover .submenu,
 .menu .dropdown:hover .submenufilms {
     display: block;
+}
+
+#changeTheme {
+
+    display: flex;
+    background: transparent; 
+    border: none;
+    color: #1a1a1a; 
+    font-size: 20px; 
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+
+#changeTheme:hover {
+
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+
 }
 
 /* Main Layout */
@@ -133,7 +154,7 @@ section {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: 1;
 }
 
@@ -152,7 +173,7 @@ section {
 
 #adaptationTitle h1 {
     text-align: center;
-    color: #fbe7ac;
+    color: #1a1a1a;
     font-family: 'Montserrat', sans-serif;
     font-size: 5vw;
     margin-bottom: 7%;
@@ -169,7 +190,7 @@ section {
     left: 0;
  right: 0;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: 1; 
 }
 
@@ -180,14 +201,14 @@ section {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: 1; 
 }
 
 /* Section Styles */
 h2 {
     text-align: center;
-    color: #fbe7ac;
+    color: #1a1a1a;
     z-index: 2;
     font-family: Montserrat;
     font-size: 3em;
@@ -277,7 +298,7 @@ h2 {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: 0; /* Ensure it is below the content */
 }
 
@@ -288,7 +309,7 @@ h2 {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: 0; /* Ensure it is below the content */
 }
 
@@ -405,7 +426,7 @@ h2 {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0,  0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: 0;
 }
 
