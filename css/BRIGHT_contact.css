@@ -136,11 +136,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 99vh;
-    background-image: url(media/contact/Contact.webp);
-    background-size: cover;
+    min-height: 100vh;
     margin: 0;
+    background: 
+        linear-gradient(to right, rgba(238, 233, 171, 0.99),transparent 20%, transparent 80%,  rgba(238, 233, 171, 0)),
+        linear-gradient(to left, rgba(238, 233, 171, 0.99),transparent 20%, transparent 80%,  rgba(238, 233, 171, 0)),
+        url(media/contact/Contact.webp);
+    background-size: 100% 100%, cover;
+    background-repeat: no-repeat;
 }
+
 
 main {
     display: flex;
@@ -434,7 +439,9 @@ main::before {
         color: #1a1a1a;
         border-radius: 7px;
         }
-
+    .basPage {
+        display:none
+    }
     
 }
 
@@ -442,6 +449,10 @@ main::before {
     .formulaire #inputtext,
     .formulaire #commentaires {
         font-size: 100%;  
+    }
+
+    .basPage {
+        display:none
     }
 
     .formulaire #envoi {
