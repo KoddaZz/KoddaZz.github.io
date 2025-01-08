@@ -1,4 +1,3 @@
-/* Navigation Menu */
 .menu {
     height: 60px;
     position: fixed;
@@ -6,121 +5,133 @@
     left: 0;
     display: flex;
     width: 100%;
-    padding: 0 10px;
+    padding: 0px 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: rgba(238, 233, 171, 0.4);
+    background-color: rgba(24, 26, 24, 0.4);
     color: #fbe7ac;
     z-index: 3;
 }
 
-.menu ul {
+.menu ul{
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-.menu ul li a {
+.menu ul li a{
     text-decoration: none;
     font-weight: bold;
-    padding: 20px;
-    color: #1a1a1a;
+    padding:20px;
+    color: #fbe7ac;
 }
 
-.menu ul li a:hover {
-    background-color: rgba(24, 26, 24, 0.4);
-    color: #fbe7ac;
+.menu ul li a:hover{
+    background-color: #fbe7ac;
+    color: #1a1a1a;
     border-radius: 7px;
 }
 
-/* Dropdown Menu */
+/*menu déroulant */
 .menu .dropdown {
-    position: relative;
+    position: relative; 
 }
 
-.menu .submenu,
-.menu .submenufilms {
+.menu .submenu {
     display: none;
     position: absolute;
-    background-color: rgba(238, 233, 171,0.5);
-    padding: 0;
+    background-color:  rgba(24, 26, 24, 0.4);
+    padding: 5px 0;
     margin: 20px 0;
+
 }
 
-.menu .submenu li,
-.menu .submenufilms li {
+.menu .submenu li {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.menu .submenu li a,
-.menu .submenufilms li a {
+
+
+.menu .submenu li a {
     text-decoration: none;
     color: #fbe7ac;
 }
 
-.menu .submenu li a:hover,
-.menu .submenufilms li a:hover {
+.menu .submenu li a:hover {
     background-color: #fbe7ac;
     color: #1a1a1a;
     border-radius: 5px;
 }
 
-.menu .dropdown:hover .submenu,
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+/* Nav Films*/
+.menu .submenufilms {
+    display: none;
+    position: absolute;
+    padding: 0px 0;
+    margin: 20px 0;
+}
+
+.menu .submenufilms li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu .submenufilms li a {
+    text-decoration: none;
+    color: #fbe7ac;
+    background-color: rgba(24, 26, 24, 0.4);
+    width: 100%;
+}
+
+.menu .submenufilms li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+
+}
+
 .menu .dropdown:hover .submenufilms {
     display: block;
 }
 
-#changeTheme {
-
-    display: flex;
-    background: transparent; 
-    border: none;
-    color: #1a1a1a; 
-    font-size: 20px; 
-    cursor: pointer;
-    margin-left: 10px;
-    padding: 15px;
-}
-
-
-#changeTheme:hover {
-
-    background-color: rgba(24, 26, 24, 0.4);
-    color: #fbe7ac;
-    border-radius: 7px;
-
-}
-
 /*Fin Nav Films*/
 
-body {
+
+
+main{
+    margin-bottom: 450px;
     min-height: 99vh;
     background-image: url(media/banniere/banniere_atreides.webp);
     background-size: cover;
+    flex: 1;
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-main{
-    font-size: 125%;
-    border-radius: 1em;
+.ensemble{
     width: 40%;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    align-items: center;
-}
-
-.ensemble{
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    font-size: 125%;
 }
 
 .cadre{
-    background: rgba(238, 233, 171, 0.25);
+    background: rgba(217, 217, 217, 0.25);
     border-radius: 1em;
 }
 
@@ -136,8 +147,9 @@ main{
     height: 170px;
 }
 #titre{
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(24, 26, 24, 0.6);
     background-color: rgba(128, 0, 0,0.8);
+    color: white;
     border-radius: 1em;
     padding: 10px;
     margin: 5px;
@@ -146,7 +158,7 @@ main{
 #Appartenance {
 
     border: 2px solid rgba(24, 26, 24, 0.6);
-    background-color: rgba(238, 233, 171,0.5);
+    background-color: rgba(217, 217, 217,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
@@ -155,7 +167,7 @@ main{
 #Parents {
 
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(238, 233, 171,0.5);
+    background-color: rgba(217, 217, 217,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
@@ -164,28 +176,28 @@ main{
 #Acteurs {
 
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(238, 233, 171,0.5);
+    background-color: rgba(217, 217, 217,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
 }
 #lieu{ 
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(238, 233, 171,0.5);
+    background-color: rgba(217, 217, 217,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
 }
 #date{
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(238, 233, 171,0.5);
+    background-color: rgba(217, 217, 217,0.5);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
 }
 #texte{
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(238, 233, 171,0.6);
+    background-color: rgba(217, 217, 217,0.6);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
@@ -209,12 +221,37 @@ main{
 }
 .style-bouton{
     border: 2px solid rgba(24, 26, 24, 0.4);
-    background-color: rgba(238, 233, 171D,0.9);
+    background-color: rgba(217, 217, 217,0.9);
     border-radius: 1em;
     padding: 5px;
     margin: 5px;
 }
 
+/*LES MODIFS POUR LE FOOTER */
+
+html, body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    flex: 1; /* met le main en haut */
+    margin-bottom: 323px;
+}
+
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: -1;
+}
 
 @media (max-width: 980px) {
     .haut_cadre img {
