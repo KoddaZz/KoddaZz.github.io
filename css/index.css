@@ -25,7 +25,7 @@ audio {
     display: none;
 }
 
-/* Navigation Menu */
+/*  Menu */
 .menu {
     height: 60px;
     position: fixed;
@@ -60,19 +60,19 @@ audio {
     border-radius: 7px;
 }
 
-/* Dropdown Menu */
+/*Menu Deroulant */
 .menu .dropdown {
     position: relative;
 }
 
 .menu .submenu,
 .menu .submenufilms {
-    display: none; /* Masquer par défaut */
+    display: none; 
     position: absolute;
     background-color: rgba(24, 26, 24, 0.4);
     padding: 0;
     margin: 20px 0;
-    z-index: 2; /* Assurez-vous qu'ils apparaissent au-dessus des autres éléments */
+    z-index: 2;
     width: 100%;
 }
 
@@ -95,22 +95,45 @@ audio {
     border-radius: 5px;
 }
 
-/* Styles pour afficher le sous-menu au survol sur les écrans plus grands */
+
 .menu .dropdown:hover .submenu,
 .menu .dropdown:hover .submenufilms {
-    display: block; /* Affiche le sous-menu au survol */
+    display: block;
 }
 
-/* Styles pour afficher le sous-menu au clic sur mobile */
+
 @media (max-width: 980px) {
     .menu .submenu,
     .menu .submenufilms {
-        display: none; /* Masquer par défaut sur mobile */
+        display: none; 
     }
 
     .menu .dropdown.show .submenu,
     .menu .dropdown.show .submenufilms {
-        display: block; /* Affiche le sous-menu au clic */
+        display: block;
+    }
+}
+
+@media (max-width: 980px) {
+    .menu {
+        height: 80px; 
+        padding: 0 20px; 
+    }
+
+    .menu ul li a {
+        padding: 30px; 
+        font-size: 1.5em; 
+    }
+
+    #changeTheme {
+        font-size: 30px; 
+        padding: 20px; 
+    }
+
+    .menu .submenu li a,
+    .menu .submenufilms li a {
+        padding: 15px;
+        font-size: 1.2em; 
     }
 }
 
@@ -131,7 +154,7 @@ audio {
     border-radius: 7px;
 }
 
-/* Main Layout */
+/* Main */
 main {
     display: flex;
     flex-direction: column;
@@ -170,7 +193,7 @@ section {
     z-index: 1;
 }
 
-/* Adaptation Title */
+
 #adaptationTitle {
     background-image: url("media/index/img_adaptations.webp");
     background-size: cover;
@@ -180,7 +203,7 @@ section {
     justify-content: center;
     align-items: center;
     z-index: 0;
-    position: relative; /* Added relative positioning */
+    position: relative; 
 }
 
 #adaptationTitle h1 {
@@ -217,7 +240,7 @@ section {
     z-index: 1; 
 }
 
-/* Section Styles */
+
 h2 {
     text-align: center;
     color: #fbe7ac;
@@ -228,11 +251,11 @@ h2 {
     background-color: rgba(24, 26, 24, 0.05);
     backdrop-filter: blur(5px);
     border-radius: 1em;
-    position: relative; /* Positioning for overlap */
-    z-index: 2; /* Ensure it appears above other content */
+    position: relative; 
+    z-index: 2; 
 }
 
-/* Background Images for Each Section */
+
 #section1 {
     background-image: url("media/index/img_fond_section1.webp");
     background-size: cover;
@@ -320,7 +343,7 @@ h2 {
     right: 0;
     height: 50%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 1; /* Ensure it is below the content */
+    z-index: 1; 
 }
 
 /* Elements Section */
@@ -336,7 +359,7 @@ h2 {
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 1em;
     position: relative;
-    z-index: 2; /* Ensure it is below the title */
+    z-index: 2; 
 }
 
 #elementsSection1 a, #elementsSection2 a, #elementsSection3 a, #elementsSection4 a, #elementsSection5 a, #elementsSection6 a, #elementsSection7 a, #elementsSection8 a, #elementsSection9 a, #elementsSection10 a {
@@ -365,7 +388,7 @@ h2 {
     line-height: 1.6;
 }
 
-/* DES BOUTONS BUG TROP SELON LES NAVIGATEURS */
+/* DES BOUTONS BUG TROP SELON LES NAVIGATEURS ( PATCH )*/
 #allerPlusLoin_Section_1, #allerPlusLoin_Section_2, #allerPlusLoin_Section_3, #allerPlusLoin_Section_4, #allerPlusLoin_Section_5, #allerPlusLoin_Section_6, #allerPlusLoin_Section_7, #allerPlusLoin_Section_8, #allerPlusLoin_Section_9, #allerPlusLoin_Section_10 {
     display: flex;
     justify-self: center;
