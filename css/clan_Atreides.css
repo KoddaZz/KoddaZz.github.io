@@ -32,6 +32,7 @@
     border-radius: 7px;
 }
 
+/*menu déroulant */
 .menu .dropdown {
     position: relative;
 }
@@ -88,7 +89,7 @@
     display: flex;
     background: transparent; 
     border: none;
-    color: var(--bg-text-clr);
+    color: #fbe7ac;
     font-size: 20px; 
     cursor: pointer;
     margin-left: 10px;
@@ -96,16 +97,17 @@
 }
 
 #changeTheme:hover {
-    background-color: var(--bg-text-clr);
+    background-color: #fbe7ac;
     color: #1a1a1a;
     border-radius: 7px;
 }
 
 /*Fin Nav Films*/
 
+
 body {
     min-height: 99vh ;
-    background-image: url(media/banniere/banniere_harkonnen.webp);
+    background-image: url(media/banniere/banniere_atreides.webp);
     background-size: cover;
 }
 
@@ -122,23 +124,17 @@ main{
     align-items: center;
 }
 
-
 .ensemble{
-    width: 40%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 125%;
+    width: 100%;
 }
 
 .cadre{
     background: rgba(217, 217, 217, 0.25);
     border-radius: 1em;
 }
-
 .haut_cadre{
     display: flex;
     flex-direction: row;
