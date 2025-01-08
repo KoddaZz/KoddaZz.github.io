@@ -61,7 +61,9 @@
     padding: 0;
     margin: 20px 0;
     z-index: 2; /* Assurez-vous qu'ils apparaissent au-dessus des autres éléments */
+    width: 100%;
 }
+
 
 .menu .submenu li,
 .menu .submenufilms li {
