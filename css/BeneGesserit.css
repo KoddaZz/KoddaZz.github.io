@@ -84,6 +84,23 @@
     }
 }
 
+#changeTheme {
+    display: flex;
+    background: transparent; 
+    border: none;
+    color: var(--bg-text-clr);
+    font-size: 20px; 
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+#changeTheme:hover {
+    background-color: var(--bg-text-clr);
+    color: #1a1a1a;
+    border-radius: 7px;
+}
+
 /*Fin Nav Films*/
 
 body {
