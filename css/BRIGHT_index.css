@@ -100,7 +100,7 @@ audio {
     display: block; 
 }
 
-
+/* Menu deroulant tel ( clickable ) */
 @media (max-width: 980px) {
     .menu .submenu,
     .menu .submenufilms {
@@ -113,6 +113,7 @@ audio {
     }
 }
 
+/* NavBar grosse sur tel */
 @media (max-width: 980px) {
     .menu {
         height: 80px; 
@@ -136,6 +137,8 @@ audio {
     }
 }
 
+/* Bouton changeTheme */
+
 #changeTheme {
 
     display: flex;
@@ -157,7 +160,7 @@ audio {
 
 }
 
-/* Main Layout */
+/* Main  */
 main {
     display: flex;
     flex-direction: column;
@@ -196,7 +199,7 @@ section {
     z-index: 1;
 }
 
-/* Adaptation Title */
+/* Adaptation Titre */
 #adaptationTitle {
     background-image: url("media/index/img_adaptations.webp");
     background-size: cover;
@@ -206,7 +209,7 @@ section {
     justify-content: center;
     align-items: center;
     z-index: 0;
-    position: relative; /* Added relative positioning */
+    position: relative;
 }
 
 #adaptationTitle h1 {
@@ -243,7 +246,7 @@ section {
     z-index: 1; 
 }
 
-/* Section Styles */
+
 h2 {
     text-align: center;
     color: #1a1a1a;
@@ -254,11 +257,11 @@ h2 {
     background-color: rgba(24, 26, 24, 0.05);
     backdrop-filter: blur(5px);
     border-radius: 1em;
-    position: relative; /* Positioning for overlap */
-    z-index: 2; /* Ensure it appears above other content */
+    position: relative; 
+    z-index: 2; 
 }
 
-/* Background Images for Each Section */
+/* Images de fond pour section */
 #section1 {
     background-image: url("media/index/img_fond_section1.webp");
     background-size: cover;
@@ -328,7 +331,7 @@ h2 {
     align-items: center;
 }
 
-/* Pseudo-elements for Fade Effect */
+/* gradiens section */
 #section1::before, #section2::before, #section3::before, #section4::before, #section5::before, #section6::before, #section7::before, #section8::before, #section9::before, #section10::before {
     content: '';
     position: absolute;
@@ -337,7 +340,7 @@ h2 {
     right: 0;
     height: 50%;
     background: linear-gradient(to bottom, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
-    z-index: 0; /* Ensure it is below the content */
+    z-index: 0; 
 }
 
 #section1::after, #section2::after, #section3::after, #section4::after, #section5::after, #section6::after, #section7::after, #section8::after, #section9::after, #section10::after {
@@ -348,7 +351,7 @@ h2 {
     right: 0;
     height: 50%;
     background: linear-gradient(to top, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
-    z-index: 0; /* Ensure it is below the content */
+    z-index: 0; 
 }
 
 /* Elements Section */
@@ -364,7 +367,7 @@ h2 {
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 1em;
     position: relative;
-    z-index: 1; /* Ensure it is below the title */
+    z-index: 1; 
 }
 
 #elementsSection1 a, #elementsSection2 a, #elementsSection3 a, #elementsSection4 a, #elementsSection5 a, #elementsSection6 a, #elementsSection7 a, #elementsSection8 a, #elementsSection9 a, #elementsSection10 a {
@@ -393,7 +396,8 @@ h2 {
     padding: 20px;
     line-height: 1.6;
 }
-/* DES BOUTONS BUG TROP SELON LES NAVIGATEURS */
+
+/* DES BOUTONS BUG TROP SELON LES NAVIGATEURS (PATCH) */
 
 #allerPlusLoin_Section_1, #allerPlusLoin_Section_2, #allerPlusLoin_Section_3, #allerPlusLoin_Section_4, #allerPlusLoin_Section_5, #allerPlusLoin_Section_6, #allerPlusLoin_Section_7, #allerPlusLoin_Section_8, #allerPlusLoin_Section_9, #allerPlusLoin_Section_10 {
     display: flex;
@@ -416,7 +420,7 @@ h2 {
     color: #fbe7ac;
 }
 
-/* Back to Top Button */
+/* BOUTON RETOURNER HAUT */
 #retourneHaut {
     position: fixed;
     bottom: 20px;
@@ -534,7 +538,7 @@ h2 {
     color: #1a1a1a;
 }
 
-/* Media Queries */
+/* Version tel */
 @media (max-width: 980px) {
     #hero {
         background-image: url("media/index/tel_img_fond_principal.webp");

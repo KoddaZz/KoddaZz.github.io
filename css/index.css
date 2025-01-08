@@ -409,7 +409,7 @@ h2 {
     color: #fbe7ac;
 }
 
-/* Back to Top Button */
+/* BOUTON RETOURNE HAUT */
 #retourneHaut {
     position: fixed;
     bottom: 20px;
@@ -527,7 +527,7 @@ h2 {
     color: #1a1a1a;
 }
 
-/* Media Queries */
+/* VERSION TELEPHONE */
 @media (max-width: 980px) {
     #hero {
         background-image: url("media/index/tel_img_fond_principal.webp");
