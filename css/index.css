@@ -307,8 +307,8 @@ h2 {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0 , 0.99), rgba(0, 0, 0));
-    z-index: 0; /* Ensure it is below the content */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1; /* Ensure it is below the content */
 }
 
 #section1::after, #section2::after, #section3::after, #section4::after, #section5::after, #section6::after, #section7::after, #section8::after, #section9::after, #section10::after {
@@ -319,7 +319,7 @@ h2 {
     right: 0;
     height: 50%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
-    z-index: 0; /* Ensure it is below the content */
+    z-index: 1; /* Ensure it is below the content */
 }
 
 /* Elements Section */
@@ -335,7 +335,7 @@ h2 {
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 1em;
     position: relative;
-    z-index: 1; /* Ensure it is below the title */
+    z-index: 2; /* Ensure it is below the title */
 }
 
 #elementsSection1 a, #elementsSection2 a, #elementsSection3 a, #elementsSection4 a, #elementsSection5 a, #elementsSection6 a, #elementsSection7 a, #elementsSection8 a, #elementsSection9 a, #elementsSection10 a {
