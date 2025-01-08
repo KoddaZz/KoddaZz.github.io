@@ -1,3 +1,18 @@
+
+/* Variables */
+:root {
+    --bg-clr: #f0f0f0;
+    --bg-text-clr: #fbe7ac;
+    --bg-button-hovering-clr: rgba(24, 26, 24, 0.4);
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Navigation Menu */
 .menu {
     height: 60px;
