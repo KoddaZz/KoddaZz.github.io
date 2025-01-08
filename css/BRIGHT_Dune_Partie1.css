@@ -176,7 +176,7 @@ html, body {
 
 main {
     flex: 1; /* met le main en haut */
-    margin-bottom: 323px;
+    margin-bottom: 223px;
 }
 
 
@@ -187,7 +187,7 @@ main::before {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: -1;
 }
 
@@ -212,7 +212,7 @@ main::before {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0,  0.99), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(238, 233, 171, 0.99), rgba(238, 233, 171, 0));
     z-index: 0;
 }
 
