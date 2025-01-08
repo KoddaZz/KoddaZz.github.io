@@ -1,26 +1,31 @@
-/* variables */
+/* Variables */
 :root {
     --bg-clr: #f0f0f0;
     --bg-text-clr: #fbe7ac;
-    --bg-button-hovering-clr: rgba(24, 26, 24, 0.4); 
+    --bg-button-hovering-clr: rgba(24, 26, 24, 0.4);
 }
 
-/* reset css */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    cursor: url('./media/bucket_kfc_curseur.png'), auto;
-    font-family: poppins;
+
+body {
+    cursor: url('media/bucket_kfc_curseur.png'), auto;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(238, 233, 171);
 }
 
-audio{
+/* Audio */
+audio {
     display: none;
 }
 
-
+/* Navigation Menu */
 .menu {
     height: 60px;
     position: fixed;
@@ -28,7 +33,7 @@ audio{
     left: 0;
     display: flex;
     width: 100%;
-    padding: 0px 10px;
+    padding: 0 10px;
     border-radius: 10px;
     justify-content: center;
     background-color: rgba(238, 233, 171, 0.4);
@@ -36,22 +41,22 @@ audio{
     z-index: 3;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    color: var(--bg-text-clr);
+    padding: 20px;
+    color: #1a1a1a;
 }
 
-.menu ul li a:hover{
-    background-color: var(--bg-text-clr);
-    color: #1a1a1a;
+.menu ul li a:hover {
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
     border-radius: 7px;
 }
 

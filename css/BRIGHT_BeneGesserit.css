@@ -1,3 +1,30 @@
+/* Variables */
+:root {
+    --bg-clr: #f0f0f0;
+    --bg-text-clr: #fbe7ac;
+    --bg-button-hovering-clr: rgba(24, 26, 24, 0.4);
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url('media/bucket_kfc_curseur.png'), auto;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(238, 233, 171);
+}
+
+/* Audio */
+audio {
+    display: none;
+}
+
 /* Navigation Menu */
 .menu {
     height: 60px;
@@ -10,7 +37,7 @@
     border-radius: 10px;
     justify-content: center;
     background-color: rgba(238, 233, 171, 0.4);
-    color: #fbe7ac;
+    color: var(--bg-text-clr);
     z-index: 3;
 }
 
@@ -28,8 +55,8 @@
 }
 
 .menu ul li a:hover {
-    background-color: rgba(24, 26, 24, 0.4);
-    color: #fbe7ac;
+    background-color: var(--bg-button-hovering-clr);
+    color: var(--bg-text-clr);
     border-radius: 7px;
 }
 
@@ -84,6 +111,7 @@
         display: block; 
     }
 }
+
 #changeTheme {
 
     display: flex;

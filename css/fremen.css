@@ -1,79 +1,65 @@
+/* Variables */
+:root {
+    --bg-clr: #f0f0f0;
+    --bg-text-clr: #fbe7ac;
+    --bg-button-hovering-clr: rgba(24, 26, 24, 0.4);
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Menu */
 .menu {
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     width: 100%;
-    padding: 0px 10px;
+    padding: 0 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: rgba(24, 26, 24, 0.4);
-    color: #fbe7ac;
-    z-index: 11;
+    background-color: rgba(13, 29, 13, 0.4);
+    color: var(--bg-text-clr);
+    z-index: 3;
 }
 
 .menu ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    padding: 0;
 }
 
 .menu ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
-    color: #fbe7ac;
+    color: var(--bg-text-clr);
 }
 
 .menu ul li a:hover {
-    background-color: #fbe7ac;
+    background-color: var(--bg-text-clr);
     color: #1a1a1a;
     border-radius: 7px;
 }
 
-.menu .dropdown {
-    position: relative;
-}
-
-.menu .submenu {
-    display: none;
-    position: absolute;
-    background-color: rgba(24, 26, 24, 0.4);
-    padding: 5px 0;
-    margin: 20px 0;
-}
-
-.menu .submenu li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.menu .submenu li a {
-    text-decoration: none;
-    color: #fbe7ac;
-}
-
-.menu .submenu li a:hover {
-    background-color: #fbe7ac;
-    color: #1a1a1a;
-    border-radius: 5px;
-}
-
-
+/* Dropdown Menu */
 .menu .dropdown {
     position: relative;
 }
 
 .menu .submenu,
 .menu .submenufilms {
-    display: none; 
+    display: none; /* Masquer par défaut */
     position: absolute;
     background-color: rgba(24, 26, 24, 0.4);
     padding: 0;
     margin: 20px 0;
-    z-index: 2;
+    z-index: 2; /* Assurez-vous qu'ils apparaissent au-dessus des autres éléments */
 }
 
 .menu .submenu li,
@@ -95,22 +81,22 @@
     border-radius: 5px;
 }
 
-
+/* Styles pour afficher le sous-menu au survol sur les écrans plus grands */
 .menu .dropdown:hover .submenu,
 .menu .dropdown:hover .submenufilms {
-    display: block; 
+    display: block; /* Affiche le sous-menu au survol */
 }
 
-
+/* Styles pour afficher le sous-menu au clic sur mobile */
 @media (max-width: 980px) {
     .menu .submenu,
     .menu .submenufilms {
-        display: none;
+        display: none; /* Masquer par défaut sur mobile */
     }
 
     .menu .dropdown.show .submenu,
     .menu .dropdown.show .submenufilms {
-        display: block; 
+        display: block; /* Affiche le sous-menu au clic */
     }
 }
 
