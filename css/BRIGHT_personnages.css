@@ -1,3 +1,4 @@
+/* Navigation Menu */
 .menu {
     height: 60px;
     position: fixed;
@@ -5,101 +6,149 @@
     left: 0;
     display: flex;
     width: 100%;
-    padding: 0px 10px;
+    padding: 0 10px;
     border-radius: 10px;
     justify-content: center;
-    background-color: rgba(24, 26, 24, 0.4);
+    background-color: rgba(238, 233, 171, 0.4);
     color: #fbe7ac;
     z-index: 3;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
     font-weight: bold;
-    padding:20px;
-    color: #fbe7ac;
+    padding: 20px;
+    color: #1a1a1a;
 }
 
-.menu ul li a:hover{
-    background-color: #fbe7ac;
-    color: #1a1a1a;
+.menu ul li a:hover {
+    background-color: rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
     border-radius: 7px;
 }
 
-/*menu déroulant */
+/* Dropdown Menu */
 .menu .dropdown {
-    position: relative; 
+    position: relative;
 }
 
-.menu .submenu {
-    display: none;
-    position: absolute;
-    background-color:  rgba(24, 26, 24, 0.4);
-    padding: 5px 0;
-    margin: 20px 0;
-
-}
-
-.menu .submenu li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-
-.menu .submenu li a {
-    text-decoration: none;
-    color: #fbe7ac;
-}
-
-.menu .submenu li a:hover {
-    background-color: #fbe7ac;
-    color: #1a1a1a;
-    border-radius: 5px;
-}
-
-.menu .dropdown:hover .submenu {
-    display: block;
-}
-
-/* Nav Films*/
+.menu .submenu,
 .menu .submenufilms {
     display: none;
     position: absolute;
-    padding: 0px 0;
+    background-color: rgba(238, 233, 171,0.5);
+    padding: 0;
     margin: 20px 0;
 }
 
+.menu .submenu li,
 .menu .submenufilms li {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
 }
 
+.menu .submenu li a,
 .menu .submenufilms li a {
     text-decoration: none;
     color: #fbe7ac;
-    background-color: rgba(24, 26, 24, 0.4);
-    width: 90%;
 }
 
+.menu .submenu li a:hover,
 .menu .submenufilms li a:hover {
     background-color: #fbe7ac;
     color: #1a1a1a;
     border-radius: 5px;
+}
+
+.menu .dropdown:hover .submenu,
+.menu .dropdown:hover .submenufilms {
+    display: block;
+}
+
+#changeTheme {
+
+    display: flex;
+    background: transparent; 
+    border: none;
+    color: #1a1a1a; 
+    font-size: 20px; 
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+
+#changeTheme:hover {
+
+    background-color: rgba(24, 26, 24, 0.4);
+    color: #fbe7ac;
+    border-radius: 7px;
 
 }
 
+/* Dropdown Menu */
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .submenu,
+.menu .submenufilms {
+    display: none;
+    position: absolute;
+    background-color: rgba(238, 233, 171,0.5);
+    padding: 0;
+    margin: 20px 0;
+}
+
+.menu .submenu li,
+.menu .submenufilms li {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .submenu li a,
+.menu .submenufilms li a {
+    text-decoration: none;
+    color: #fbe7ac;
+}
+
+.menu .submenu li a:hover,
+.menu .submenufilms li a:hover {
+    background-color: #fbe7ac;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+.menu .dropdown:hover .submenu,
 .menu .dropdown:hover .submenufilms {
     display: block;
+}
+
+#changeTheme {
+
+    display: flex;
+    background: transparent; 
+    border: none;
+    color: #1a1a1a; 
+    font-size: 20px; 
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+
+#changeTheme:hover {
+
+    background-color: rgba(24, 26, 24, 0.4);
+    color: var(--bg-text-clr);
+    border-radius: 7px;
+
 }
 
 /*Fin Nav Films*/
