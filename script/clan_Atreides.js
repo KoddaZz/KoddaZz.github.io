@@ -108,3 +108,17 @@ function changer_vers_larriere() {
     //personnages.lenght = longueur du tableau l'ajouter permet d'éviter un index négatif
     // utiliser le modulo permet ici de revenir à la fin du tableau si on à un index négatif
 }
+
+// Sélection du bouton et du lien CSS
+const changeThemeBoutton = document.getElementById('changeTheme');
+const styleLink = document.getElementById('style-link');
+
+// Gestion de l'événement lors du clic
+changeThemeBoutton.addEventListener('click', () => {
+  // Vérification du CSS actuel
+  if (styleLink.getAttribute('href') === 'css/clan_Atreides.css') {
+    styleLink.setAttribute('href', 'css/BRIGHT_clan_Atreides.css'); // Basculer vers le thème clair
+  } else {
+    styleLink.setAttribute('href', 'css/clan_Atreides.css'); // Revenir au thème sombre
+  }
+});
