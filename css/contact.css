@@ -291,8 +291,9 @@ main::before {
 }
 
 .basPageGitRepoAndAuthors a img {
-    margin: 25px;
-    margin-top: 60px;
+    margin: 0px;
+    margin-top: 0px;
+    size: 1em;
 }
 
 .basPageGitRepoAndAuthors a img:hover {
@@ -339,6 +340,14 @@ main::before {
 
     .menu {
         padding: 0%;
+    }
+    .basPage {
+        position: relative;
+        background-color: #1f1e1e;
+        color: #fbe7ac;
+        width: 100%;
+        height: auto; 
+        padding: 20px 0; 
     }
 
     .menu .submenufilms {
@@ -428,6 +437,47 @@ main::before {
         color: #1a1a1a;
         border-radius: 7px;
         }
+    .blabla p {
+    display: flex;
+    display: none;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    border-radius: 1em;
+    text-align: justify;
+    margin: 40px 100px 0;
+    }
+    /* Footer */
+    .basPage {
+        position: relative;
+        background-color: #1f1e1e;
+        color: #fbe7ac;
+        width: 100%;
+        padding: 10px 0; /* Réduction globale */
+        height: auto; /* Ajustement automatique à son contenu */
+        min-height: 50px; /* Garde un minimum si nécessaire */
+    }
+
+    .blabla p {
+        padding: 5px;
+        margin: 0 10px; /* Réduit l'espacement */
+        font-size: 0.85em; /* Texte légèrement plus petit */
+    }
+
+    .basPageAuteurs {
+        padding: 5px;
+        border-radius: 5px; /* Légère réduction du rayon des coins */
+        margin: 0 10px; /* Réduit l'espace externe */
+    }
+
+    .basPageAuteursNoms {
+        gap: 5px; /* Diminue l'espace entre les noms */
+    }
+
+    .basPageGitRepoAndAuthors a img {
+        margin: 5px;
+    }
+
 
     
 }
@@ -437,10 +487,58 @@ main::before {
     .formulaire #commentaires {
         font-size: 100%;  
     }
+    .blabla p {
+        display: flex;
+        display: none;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 5px;
+        border-radius: 1em;
+        text-align: justify;
+        margin: 40px 100px 0;
+        }
+        /* Footer */
+    .basPage {
+        position: relative;
+        background-color: #1f1e1e;
+        color: #fbe7ac;
+        width: 100%;
+        padding: 10px 0; /* Réduction globale */
+        height: auto; /* Ajustement automatique à son contenu */
+        min-height: 50px; /* Garde un minimum si nécessaire */
+    }
+
+    .blabla p {
+        padding: 5px;
+        margin: 0 10px; /* Réduit l'espacement */
+        font-size: 0.85em; /* Texte légèrement plus petit */
+    }
+
+    .basPageAuteurs {
+        padding: 5px;
+        border-radius: 5px; /* Légère réduction du rayon des coins */
+        margin: 0 10px; /* Réduit l'espace externe */
+    }
+
+    .basPageAuteursNoms {
+        gap: 5px; /* Diminue l'espace entre les noms */
+    }
+
+    .basPageGitRepoAndAuthors a img {
+        margin: 5px;
+    }
 
     .formulaire #envoi {
         font-size: 0.9rem;
         padding: 10px;
+    }
+    .basPage {
+        position: relative;
+        background-color: #1f1e1e;
+        color: #fbe7ac;
+        width: auto;
+        height: auto; 
+        padding: 20px 0; 
     }
 
     .menu ul li a {
