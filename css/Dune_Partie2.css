@@ -1,5 +1,4 @@
 .menu {
-    position: fixed;
     top: 0;
     display: flex;
     padding: 0px 10px;
@@ -99,7 +98,6 @@
     color: #1a1a1a;
     border-radius: 7px;
 }
-
 
 
 body {
@@ -264,7 +262,7 @@ main::before {
     margin-top: 40px;
 }
 
-.basPageAuteurs h3 {
+.basPageAuteurs h2 {
     margin-bottom: 30px;
 }
 

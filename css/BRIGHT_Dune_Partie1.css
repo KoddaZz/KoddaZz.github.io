@@ -1,5 +1,4 @@
 .menu {
-    position: fixed;
     top: 0;
     display: flex;
     padding: 0px 10px;
@@ -170,6 +169,7 @@ h1 {
     border-radius: 0.5em;
     padding: 10px;
     margin-bottom: 300px;
+    margin-top: 20px;
 }
 
 /*LES MODIFS POUR LE FOOTER */
@@ -318,7 +318,6 @@ main::before {
     }
     .video {
         max-width: 100%;
-        margin-bottom: 75px;
     }
 
     h1 {
