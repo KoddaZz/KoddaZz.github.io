@@ -113,6 +113,29 @@ audio {
     }
 }
 
+@media (max-width: 980px) {
+    .menu {
+        height: 80px; 
+        padding: 0 20px; 
+    }
+
+    .menu ul li a {
+        padding: 30px; 
+        font-size: 1.5em; 
+    }
+
+    #changeTheme {
+        font-size: 30px; 
+        padding: 20px; 
+    }
+
+    .menu .submenu li a,
+    .menu .submenufilms li a {
+        padding: 15px;
+        font-size: 1.2em; 
+    }
+}
+
 #changeTheme {
     display: flex;
     background: transparent; 
