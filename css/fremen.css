@@ -36,20 +36,6 @@
     position: relative;
 }
 
-
-
-h1 {
-    font-size: 2em;
-    color: #fbe7ac;
-    margin-bottom: 7%;
-    background-color: rgba(24, 26, 24, 0.05);
-    backdrop-filter: blur(5px);
-    border-radius: 0.5em;
-}
-
-
-
-
 .menu .submenu {
     display: none;
     position: absolute;
@@ -112,6 +98,14 @@ h1 {
     display: block;
 }
 
+h1 {
+    font-size: 2em;
+    color: #fbe7ac;
+    margin-bottom: 7%;
+    background-color: rgba(24, 26, 24, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 0.5em;
+}
 
 
 body {

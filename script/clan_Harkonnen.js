@@ -103,3 +103,13 @@ changeThemeBoutton.addEventListener('click', () => {
     styleLink.setAttribute('href', 'css/clan_Harkonnen.css'); // Revenir au thème sombre
   }
 });
+
+function toggleDropdown(element) {
+    const submenu = element.querySelector('.submenu, .submenufilms');
+    if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+    } else {
+        submenu.style.display = "block";
+    }
+  }
+  
