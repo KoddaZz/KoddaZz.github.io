@@ -235,19 +235,31 @@ html, body {
 
 main {
     flex: 1; /* met le main en haut */
+    margin-bottom: 50px;
 }
-
 
 main::before {
     content: '';
     position: absolute;
-    top: 50%;
+    top:  50%;
     left: 0;
     right: 0;
     height: 50%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
     z-index: 1;
 }
+
+.basPage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+    z-index: 1; 
+}
+
 /* Footer */
 .basPage {
     position: relative;
@@ -260,17 +272,6 @@ main::before {
     align-items: center;
     position: relative;
     backdrop-filter: blur(3.5px);
-}
-
-.basPage::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0,  0.99), rgba(0, 0, 0, 0));
-    z-index: 0;
 }
 
 .blabla {
